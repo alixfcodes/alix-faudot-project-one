@@ -1,0 +1,28 @@
+header {
+    background-color: $pine;
+    max-height: 70vh;
+    .headerContainer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        .textContainer {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            h1 {
+                font-size: 7rem;
+                padding-bottom: 200px;
+                padding-right: 20px;
+            }
+        }
+        .imgContainer {
+            img {
+                display: block;
+                height: 90%;
+                box-shadow: 15px 15px rgba($whiteShade, 1);
+            }
+        }
+    }
+}

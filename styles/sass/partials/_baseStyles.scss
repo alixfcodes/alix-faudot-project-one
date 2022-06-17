@@ -1,13 +1,12 @@
 .wrapper {
   max-width: 1260px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
 .button {
     background-color: $accent;
     padding: 15px 30px;
-    color: $black;
     font-family: $headingFont;
     font-size: 1rem;
     font-weight: normal;
@@ -15,8 +14,6 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
-    text-decoration: none;
-    transition: 0.3s;
     &:hover, &:focus {
         border: 3px solid $accent;
         background-color: $whiteShade;

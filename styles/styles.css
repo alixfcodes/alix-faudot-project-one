@@ -243,6 +243,7 @@ h1, h2, h3, h4 {
   color: #1f1818;
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 h1 {
@@ -266,20 +267,39 @@ h4 {
 h5 {
   font-size: 1rem;
   font-weight: bold;
+  color: #f6f6f6;
   line-height: 1.45rem;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+ul, li, a, input {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .wrapper {
   max-width: 1260px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
 .button {
   background-color: #e4a436;
   padding: 15px 30px;
-  color: #1f1818;
   font-family: "Abril Fatface";
   font-size: 1rem;
   font-weight: normal;
@@ -287,11 +307,77 @@ h5 {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 .button:hover, .button:focus {
   border: 3px solid #e4a436;
   background-color: #f6f6f6;
+}
+
+nav {
+  background-color: #345231;
+  height: 10vh;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+nav ul li {
+  padding: 0 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+nav ul li a h2, nav ul li a h5 {
+  color: #f6f6f6;
+}
+nav ul li a h2:hover, nav ul li a h2:focus, nav ul li a h5:hover, nav ul li a h5:focus {
+  color: #e4a436;
+}
+
+header {
+  background-color: #345231;
+  max-height: 70vh;
+}
+header .headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px;
+}
+header .headerContainer .textContainer {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+header .headerContainer .textContainer h1 {
+  font-size: 7rem;
+  padding-bottom: 200px;
+  padding-right: 20px;
+}
+header .headerContainer .imgContainer img {
+  display: block;
+  height: 90%;
+  -webkit-box-shadow: 15px 15px #f6f6f6;
+          box-shadow: 15px 15px #f6f6f6;
 }

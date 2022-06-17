@@ -1,0 +1,22 @@
+nav {
+    background-color: $pine;
+    height: 10vh;
+    ul {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        li {
+            padding: 0 25px;
+            transition: 0.3s;
+            a {
+                h2, h5 {
+                    color: $whiteShade;
+                    &:hover, &:focus {
+                        color: $accent;
+                    }
+                }
+            }
+        }
+    }
+}
