@@ -1,0 +1,32 @@
+form {
+    display: flex;
+    flex-direction: column;
+    color: $black;
+    outline: none;
+    input, textarea {
+            border: none;
+            font-family: $bodyFont;
+            color: $black;
+            padding: 30px;
+            margin-bottom: 20px;
+            accent-color: $accent;
+            &::placeholder {
+                color: $black;
+                opacity: 1;
+            }
+        }
+    textarea {
+        resize: none;
+    }
+    .contactInfo {
+        display: flex;  
+        justify-content: space-between;
+        .formName, .formEmail {
+            width: 49%;
+        }
+    }
+    .postComment {
+        border: none;
+        cursor: pointer;
+    }
+}

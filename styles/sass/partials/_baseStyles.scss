@@ -14,6 +14,8 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
+    border: 3px solid $accent;
+    transition: 0.3s;
     &:hover, &:focus {
         border: 3px solid $accent;
         background-color: $whiteShade;

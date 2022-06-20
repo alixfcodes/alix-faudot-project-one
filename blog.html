@@ -75,7 +75,7 @@
                 <article class="aboutArticle">
                     <img src="./assets/blog-image-2.jpg" alt="">
                     <h4>About Willow</h4>
-                    <p>Lorem ipusm nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="#">Find out more.</a></p>
+                    <p>Lorem ipusm nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="#" class="aboutLink">Find out more.</a></p>
                 </article>
 
                 <div class="recentPosts">
@@ -109,27 +109,27 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretiur tempor. Ut get imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestle justo at, auctor nunc. Phasellus liqula ipsum, volutpat eget semper id, viverra eget nibh Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis Fusce porttitor a mi at suscipit. Present facilisis dolor sapien, vel sodales auque mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turois sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis. Donec elementum. acus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique rISUS</p>
                     <p>Ut Id consectetur magna. Ouisque volutpat auque enim, bulvinar loborti. nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor Id sit amet risus. Nam tempus vel odio vitae aliquam</p>
                     <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper SusCipIt nunc, sed aliquam sapien convallis eu. Nulla ut turois in diam dapibus consequat.rusce vehicula dolor arcu, sit amet blandit dolor mollis nec Donec viverra eleltend lacu.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretlun tempor. Uteget Imperdiet neque. In VOur cemer.laM mo aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper ld, viverra eget nibr Suspendisse luctus mattis cursus. Nam consectetur ante at nil hendrerit gravida. Donec vehicula rhoncus mattis</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretlun tempor. Uteget Imperdiet neque. In VOur cemer.laM mo aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper ld, viverra eget nibr Suspendisse luctus mattis cursus. Nam consectetur ante at nil hendrerit gravida. Donec vehicula rhoncus mattis.</p>
                 </article>
 
-                <div class="priorPosts">
+                <div>
                     
-                    <article class="priorPostOne">
+                    <article class="priorPosts priorPostOne">
 
                         <img src="./assets/blog-image-3.jpg" alt="">
-                        <div>
+                        <div class="priorPostContent">
                             <p>Tuesday May 9th, 2022 by Barb</p>
-                            <p>Fusce venicu a dol or arcu. sit amet blandit dolor molls nec. Donec viverra eleitend acus. vitae ulamcoroer metus. Sed solicitudin guis nunc solicitudin ultrices. Donec euismod scelerisque eu varus rsus, eu allquet arcu</p>
+                            <p>Fusce venicu a dol or arcu. sit amet blandit dolor molls nec. Donec viverra eleitend acus. vitae ulamcoroer metus. Sed solicitudin guis nunc solicitudin ultrices. Donec euismod scelerisque eu varus rsus, eu allquet arcu.</p>
                         </div>
 
                     </article>
 
-                    <article class="priorPostTwo">
+                    <article class="priorPosts priorPostTwo">
                         
                         <img src="./assets/blog-image-4.jpg" alt="">
-                        <div>
+                        <div class="priorPostContent">
                             <p>Wednesday May 10th, 2022 by Daisy</p>
-                            <p>Doner viverra eleifend lacus vitae ullamcorner metus sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismoc scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu</p>
+                            <p>Doner viverra eleifend lacus vitae ullamcorner metus sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismoc scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
                         </div>
 
                     </article>
@@ -137,16 +137,19 @@
 
                 <form action="">
 
-                    <label for="name" class="sr-only">Name</label>
-                    <input type="text" id="name" placeholder="Name" required>
+                    <div class="contactInfo">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" class="formName" placeholder="Name" required>
 
-                    <label for="email" class="sr-only">Email address</label>
-                    <input type="email" id="email" placeholder="Email address" required>
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" id="email" class="formEmail" placeholder="Email address" required>
+
+                    </div>
 
                     <label for="comment" class="sr-only">Comment</label>
                     <textarea id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
 
-                    <button type="submit" class="postComment">Post comment</button>
+                    <button type="submit" class="button postComment">Post comment</button>
 
                 </form>
             </div>
