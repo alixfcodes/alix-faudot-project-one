@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/522cdd93db.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -56,12 +57,12 @@
     </nav>
 
     <!-- header -->
-    <header>
+    <header class="headerHome">
 
             <div class="wrapper headerContainer">
 
                 <div class="textContainer">
-                    <h5>Daily musings of</h5>
+                    <div><img src="./assets/circle-text.png" alt=""></div>
                     <h1>Willow</h1>
                 </div>
 
@@ -76,12 +77,12 @@
     <main>
 
         <!-- about section -->
-        <section>
+        <section class="aboutSection">
 
             <div class="wrapper aboutContainer">
 
                 <h2>Who's Willow?</h2>
-                <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum vitae ligula vel ornare. Phasellus at semper turpis. Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum vitae ligula vel ornare. Phasellus at semper turpis.</p>
+                <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum vitae ligula vel ornare. Phasellus at semper turpis. Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum vitae ligula vel ornare. Phasellus at semper turpis. Cras ullamcorper bibendum vitae ligula vel ornare.</p>
                 <a href="#" class="button">Find out more</a>
 
             </div><!-- END of wrapper -->
@@ -89,11 +90,11 @@
         </section>
 
         <!-- blog section -->
-        </section>
+        </section class="blogSection">
 
             <div class="wrapper blogContainer">
 
-                <div class="blogPreviewOne">
+                <div class="blogPreview blogPreviewOne">
 
                     <div class="imgContainer">
                         <img src="./assets/home-image-2.jpg" alt="">
@@ -107,16 +108,16 @@
 
                 </div>
 
-                <div class="blogPreviewTwo">
-                    <div class="textContainer">
+                <div class="blogPreview blogPreviewTwo">
 
+                    <div class="textContainer">
                         <h3>Bucket list</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab ad aut sint dolore, corrupti molestiae incidunt nam amet earum repellendus. Id cum iure voluptate, esse laudantium libero repellat exercitationem eveniet!</p>
                         <a href="./blog.html" class="button">Read more</a>
                     </div>
 
                     <div class="imgContainer">
-                        <img src="./assets/home-image-2.jpg" alt="">
+                        <img src="./assets/home-image-3.jpg" alt="">
                     </div>
 
                 </div>
@@ -126,9 +127,9 @@
         </section>
 
         <!-- about section -->
-        <section>
+        <section class="aboutTwoSection">
 
-            <div class="wrapper aboutContainer">
+            <div class="wrapper aboutTwoContainer">
 
                 <div class="imgContainer">
                     <img src="./assets/home-image-4.jpg" alt="">
@@ -153,68 +154,70 @@
 
             <div class="wrapper galleryContainer">
 
-                <div class="galleryImg">
-                    <img src="./assets/home-image-6.jpg" alt="">
-                </div>
-                <div class="galleryImg">
-                    <img src="./assets/home-image-7.jpg" alt="">
-                </div>
-                <div class="galleryImg">
-                    <img src="./assets/home-image-8.jpg" alt="">
-                </div>
+                <ul>
+
+                    <li class="galleryImg">                    
+                        <img src="./assets/home-image-6.jpg" alt="">
+                    </li>
+
+                    <li class="galleryImg">
+                        <img src="./assets/home-image-7.jpg" alt="">
+                    </li>
+
+                    <li class="galleryImg">
+                        <img src="./assets/home-image-8.jpg" alt="">
+                    </li>
+
+                </ul>
 
             </div><!-- END of wrapper -->
 
         </section>
 
-        <footer>
-            <div class="wrapper">
-
-                <div class="footerContainer">
-
-                    <a href="#" class="footerContent">
-                        <i></i>
-                        <div class="footerText">
-                            <h3>Photos</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aliquid earum, esse nemo repellat reprehenderit placeat amet similique. Aut itaque repellendus dolor officia nobis eligendi nihil consectetur sequi incidunt dolorem?</p>
-                        </div>
-                    </a>
-
-                    <a href="#" class="footerContent">
-                        <i></i>
-                        <div class="footerText">
-                            <h3>About</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aliquid earum, esse nemo repellat reprehenderit placeat amet similique. Aut itaque repellendus dolor officia nobis eligendi nihil consectetur sequi incidunt dolorem?</p>
-                        </div>
-                    </a>
-
-                    <a href="./blog.html" class="footerContent">
-                        <i></i>
-                        <div class="footerText">
-                            <h3>Blog</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aliquid earum, esse nemo repellat reprehenderit placeat amet similique. Aut itaque repellendus dolor officia nobis eligendi nihil consectetur sequi incidunt dolorem?</p>
-                        </div>
-                    </a>
-
-                    <a href="./contact.html" class="footerContent">
-                        <i></i>
-                        <div class="footerText">
-                            <h3>Contact me</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aliquid earum, esse nemo repellat reprehenderit placeat amet similique. Aut itaque repellendus dolor officia nobis eligendi nihil consectetur sequi incidunt dolorem?</p>
-                        </div>
-                    </a>
-
-                </div>
-
-                <div class="copyright">
-                    <p>Copyright @ 2022 Juno </p>
-                </div>
-
-            </div><!-- END of wrapper -->
-
-        </footer>
-
     </main>
+
+    <footer>
+        <div class="wrapper footerContainer">
+
+            <a href="#" class="footerContent">
+                <i class="fa-solid fa-image"></i>
+                <div class="footerText">
+                    <h3>Photos</h3>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                </div>
+            </a>
+
+            <a href="#" class="footerContent">
+                <i class="fa-solid fa-user"></i>
+                <div class="footerText">
+                        <h3>About</h3>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                </div>
+            </a>
+
+            <a href="./blog.html" class="footerContent">
+                <i class="fa-solid fa-display"></i>
+                <div class="footerText">
+                    <h3>Blog</h3>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                </div>
+            </a>
+
+            <a href="./contact.html" class="footerContent">
+                <i class="fa-solid fa-phone-flip"></i>
+                <div class="footerText">
+                    <h3>Contact me</h3>
+                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                </div>
+            </a>
+
+        </div><!-- END of wrapper -->
+
+        <div class="copyright">
+            <p>Copyright © 2022 Juno </p>
+        </div>
+
+    </footer>
     
 </body>
 </html>

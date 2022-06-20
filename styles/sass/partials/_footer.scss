@@ -1,0 +1,40 @@
+footer {
+    background-color: $whiteShade;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 100px 0;
+    .footerContent {
+        width: 49.5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+            display: flex;
+            align-self: flex-start;
+            background-color: $accent;
+            border-radius: 50%;
+            padding: 15px;
+        }
+        .footerText {
+            padding-left: 20px;
+        }
+    }
+}
+
+.footerText h3 {
+    padding-top: 10px;
+}
+
+.copyright {
+    background-color: $black;
+    padding: 5px 0;
+    color: white;
+    p {
+        padding: 0;
+    }
+}

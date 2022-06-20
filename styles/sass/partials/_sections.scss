@@ -1,0 +1,110 @@
+// HOME SECTIONS
+
+.aboutSection {
+    background-color: $whiteShade;
+    padding-top: 130px;
+    padding-bottom: 180px;
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2, p {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.blogSection {
+    padding: 100px 0;
+}
+
+.blogPreviewOne {
+    img {
+        // display: block;
+        // height: 100%;
+        box-shadow: 15px 15px rgba($greenGrey, 1);
+    }
+}
+
+.blogPreviewTwo {
+    img {
+        // display: block;
+        // height: 100%;
+        box-shadow: -15px -15px rgba($greenGrey, 1);
+    }
+}
+
+.aboutTwoSection {
+    background-color: $whiteShade;
+    padding: 100px 0;
+    .aboutTwoContainer {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        .imgContainer {
+            img {
+                display: block;
+                height: 100%;
+                box-shadow: 15px 15px rgba($greenGrey, 1);
+            }
+        }
+        .textContainer {
+            margin-left: 150px;
+            width: 75%;
+            h2, p {
+                padding-bottom: 20px;
+            }
+        }
+
+    }
+}
+
+
+.blogContainer {
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+}
+
+
+.backgroundImg {
+    // display: flex;
+    width: 100%;
+    // background-image: url(../assets/home-image-5.jpg);
+}
+
+.galleryContainer {
+    padding: 100px 0;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            flex-basis: calc(100% / 3 - 20px);
+        }
+        li:nth-child(2) {
+            padding: 0 20px;
+    }
+    }
+}
+
+// BLOG SECTIONS
+
+.mainBlog {
+    background-color: $whiteShade;
+}
+
+.blogMainPage {
+    // display: flex;
+    // flex-direction: column;
+    .leftColumn {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+    }
+    .rightColumn {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 65%;
+    }
+}

@@ -299,7 +299,7 @@ a {
 
 .button {
   background-color: #e4a436;
-  padding: 15px 30px;
+  padding: 10px 22px;
   font-family: "Abril Fatface";
   font-size: 1rem;
   font-weight: normal;
@@ -311,6 +311,10 @@ a {
 .button:hover, .button:focus {
   border: 3px solid #e4a436;
   background-color: #f6f6f6;
+}
+
+img {
+  display: block;
 }
 
 nav {
@@ -341,11 +345,11 @@ nav ul li a h2:hover, nav ul li a h2:focus, nav ul li a h5:hover, nav ul li a h5
   color: #e4a436;
 }
 
-header {
+.headerHome {
   background-color: #345231;
   max-height: 70vh;
 }
-header .headerContainer {
+.headerHome .headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,8 +358,55 @@ header .headerContainer {
           justify-content: space-between;
   padding-top: 40px;
 }
-header .headerContainer .textContainer {
+.headerHome .headerContainer .textContainer {
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 150px;
+  padding-right: 20px;
+}
+.headerHome .headerContainer .textContainer div {
+  height: 40%;
+}
+.headerHome .headerContainer .textContainer h1 {
+  font-size: 7rem;
+}
+.headerHome .headerContainer .imgContainer img {
+  display: block;
+  height: 90%;
+  -webkit-box-shadow: 15px 15px white;
+          box-shadow: 15px 15px white;
+}
+
+.headerBlog {
+  background-image: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 55vh;
+}
+.headerBlog .headerBlogContainer {
+  position: relative;
+  height: 100%;
+}
+.headerBlog .headerBlogContainer h1 {
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+}
+
+.aboutSection {
+  background-color: #f6f6f6;
+  padding-top: 130px;
+  padding-bottom: 180px;
+}
+.aboutSection .aboutContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,18 +417,165 @@ header .headerContainer .textContainer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-header .headerContainer .textContainer h1 {
-  font-size: 7rem;
-  padding-bottom: 200px;
-  padding-right: 20px;
+.aboutSection .aboutContainer h2, .aboutSection .aboutContainer p {
+  padding-bottom: 20px;
 }
-header .headerContainer .imgContainer img {
+
+.blogSection {
+  padding: 100px 0;
+}
+
+.blogPreviewOne img {
+  -webkit-box-shadow: 15px 15px #709b6b;
+          box-shadow: 15px 15px #709b6b;
+}
+
+.blogPreviewTwo img {
+  -webkit-box-shadow: -15px -15px #709b6b;
+          box-shadow: -15px -15px #709b6b;
+}
+
+.aboutTwoSection {
+  background-color: #f6f6f6;
+  padding: 100px 0;
+}
+.aboutTwoSection .aboutTwoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+}
+.aboutTwoSection .aboutTwoContainer .imgContainer img {
   display: block;
-  height: 90%;
-  -webkit-box-shadow: 15px 15px #f6f6f6;
-          box-shadow: 15px 15px #f6f6f6;
+  height: 100%;
+  -webkit-box-shadow: 15px 15px #709b6b;
+          box-shadow: 15px 15px #709b6b;
+}
+.aboutTwoSection .aboutTwoContainer .textContainer {
+  margin-left: 150px;
+  width: 75%;
+}
+.aboutTwoSection .aboutTwoContainer .textContainer h2, .aboutTwoSection .aboutTwoContainer .textContainer p {
+  padding-bottom: 20px;
+}
+
+.blogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.backgroundImg {
+  width: 100%;
+}
+
+.galleryContainer {
+  padding: 100px 0;
+}
+.galleryContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.galleryContainer ul li {
+  -ms-flex-preferred-size: calc(33.3333333333% - 20px);
+      flex-basis: calc(33.3333333333% - 20px);
+}
+.galleryContainer ul li:nth-child(2) {
+  padding: 0 20px;
+}
+
+.mainBlog {
+  background-color: #f6f6f6;
+}
+
+.blogMainPage .leftColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.blogMainPage .rightColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+}
+
+footer {
+  background-color: #f6f6f6;
+}
+
+.footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+  padding: 100px 0;
+}
+.footerContainer .footerContent {
+  width: 49.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footerContainer .footerContent i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: #e4a436;
+  border-radius: 50%;
+  padding: 15px;
+}
+.footerContainer .footerContent .footerText {
+  padding-left: 20px;
+}
+
+.footerText h3 {
+  padding-top: 10px;
+}
+
+.copyright {
+  background-color: #1f1818;
+  padding: 5px 0;
+  color: white;
+}
+.copyright p {
+  padding: 0;
 }

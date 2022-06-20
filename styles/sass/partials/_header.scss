@@ -1,4 +1,6 @@
-header {
+// HOME HEADER
+
+.headerHome {
     background-color: $pine;
     max-height: 70vh;
     .headerContainer {
@@ -8,21 +10,41 @@ header {
         .textContainer {
             width: 60%;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
+            justify-content: flex-end;
+            align-items: center;
+            padding-bottom: 150px;
+            padding-right: 20px;
+            div {
+                height: 40%;
+            }
             h1 {
                 font-size: 7rem;
-                padding-bottom: 200px;
-                padding-right: 20px;
             }
         }
         .imgContainer {
             img {
                 display: block;
                 height: 90%;
-                box-shadow: 15px 15px rgba($whiteShade, 1);
+                box-shadow: 15px 15px rgba(white, 1);
             }
+        }
+    }
+}
+
+// BLOG HEADER
+
+.headerBlog {
+    background-image: url(../assets/blog-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 55vh;
+    .headerBlogContainer {
+        position: relative;
+        height: 100%;
+        h1 {
+            position: absolute;
+            left: 0;
+            bottom: -16px;
         }
     }
 }
