@@ -297,7 +297,7 @@ a {
   margin: 0 auto;
 }
 
-.button {
+button, .button {
   background-color: #e4a436;
   padding: 10px 22px;
   font-family: "Abril Fatface";
@@ -310,8 +310,9 @@ a {
   border: 3px solid #e4a436;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: pointer;
 }
-.button:hover, .button:focus {
+button:hover, button:focus, .button:hover, .button:focus {
   border: 3px solid #e4a436;
   background-color: #f6f6f6;
 }
@@ -551,9 +552,6 @@ nav ul li a h2:hover, nav ul li a h2:focus, nav ul li a h5:hover, nav ul li a h5
 .blogMainPage .leftColumn .aboutArticle .aboutLink:hover, .blogMainPage .leftColumn .aboutArticle .aboutLink:focus, .blogMainPage .leftColumn .recentPosts .aboutLink:hover, .blogMainPage .leftColumn .recentPosts .aboutLink:focus {
   color: #e4a436;
 }
-.blogMainPage .leftColumn .aboutArticle li, .blogMainPage .leftColumn .recentPosts li {
-  list-style: inside;
-}
 .blogMainPage .rightColumn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -592,6 +590,35 @@ nav ul li a h2:hover, nav ul li a h2:focus, nav ul li a h5:hover, nav ul li a h5
 .priorPosts .priorPostContent p {
   margin: 0;
   padding: 0;
+}
+
+.socialNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
+}
+.socialNav li {
+  list-style: none;
+  text-decoration: none;
+  padding-right: 30px;
+  font-size: 1.2rem;
+}
+.socialNav li i {
+  color: #345231;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.socialNav li i:hover, .socialNav li i:focus {
+  color: #709b6b;
+}
+
+address {
+  font-style: normal;
+}
+
+.emailAddress {
+  font-weight: bold;
 }
 
 form {
@@ -647,10 +674,6 @@ form .contactInfo {
 form .contactInfo .formName, form .contactInfo .formEmail {
   width: 49%;
 }
-form .postComment {
-  border: none;
-  cursor: pointer;
-}
 
 footer {
   background-color: #f6f6f6;
@@ -705,4 +728,11 @@ footer {
 }
 .copyright p {
   padding: 0;
+}
+.copyright p a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.copyright p a:hover, .copyright p a:focus {
+  color: #e4a436;
 }

@@ -123,7 +123,7 @@
                 }
             }
             li {
-                list-style: inside;
+                // list-style: inside;
             }
         }
     }
@@ -154,4 +154,32 @@
             padding: 0;
         }
     }
+}
+
+// CONTACT PAGE
+
+.socialNav {
+    display: flex;
+    padding-bottom: 10px;
+    li {
+        list-style: none;
+        text-decoration: none;
+        padding-right: 30px;
+        font-size: 1.2rem;
+        i {
+            color: $pine;
+            transition: 0.3s;
+            &:hover, &:focus {
+            color: $greenGrey;
+            }
+        }
+    }
+}
+
+address {
+    font-style: normal;
+}
+
+.emailAddress {
+    font-weight: bold;
 }

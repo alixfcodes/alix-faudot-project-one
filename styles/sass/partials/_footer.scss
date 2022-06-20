@@ -36,5 +36,11 @@ footer {
     color: white;
     p {
         padding: 0;
+        a {
+            transition: 0.3s;
+            &:hover, &:focus {
+                color: $accent;
+            }
+        }
     }
 }
