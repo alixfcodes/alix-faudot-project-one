@@ -31,14 +31,14 @@
     }
 }
 
-// BLOG HEADER
+// BLOG/CONTACT HEADER
 
-.headerBlog {
+.header {
     background-image: url(../assets/blog-image-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 55vh;
-    .headerBlogContainer {
+    .headerContainer {
         position: relative;
         height: 100%;
         h1 {
@@ -47,4 +47,10 @@
             bottom: -16px;
         }
     }
+}
+
+// CONTACT HEADER
+
+.headerContact {
+    background-image: url(../assets/contact-image-1.jpg);
 }

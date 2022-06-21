@@ -102,7 +102,7 @@
     .leftColumn {
         display: flex;
         flex-direction: column;
-        flex-basis: 25%;
+        flex-basis: 33%;
         .aboutArticle, .recentPosts {
             display: flex;
             flex-direction: column;
@@ -130,24 +130,24 @@
     .rightColumn {
         display: flex;
         flex-direction: column;
-        flex-basis: 65%;
-        .mostRecentPost, .priorPosts {
+        flex-basis: 63%;
+        .mostRecentPost, .comments {
             background-color: white;
             padding: 40px;
             margin-bottom: 40px;
             border-bottom: 6px solid $greenGrey;
         }
-        .priorPostOne {
+        .commentOne {
             border-bottom: none;
         }
     }
 }
 
-.priorPosts {
+.comments {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    .priorPostContent {
+    .commentContent {
         width: 85%;
         p {
             margin: 0;
