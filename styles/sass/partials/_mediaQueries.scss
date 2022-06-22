@@ -1,0 +1,17 @@
+
+
+@media (max-width: 950px) {
+    // BLOG
+    .blogMainPage {
+        flex-direction: column;
+        .leftColumn, .rightColumn {
+            flex-basis: 100%;
+        }
+        // .leftColumn {
+        //     flex-direction: row;
+        //     .aboutArticle {
+        //         flex-basis: 40%; 
+        //     }
+        // }
+    }
+}

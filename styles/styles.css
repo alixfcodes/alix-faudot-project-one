@@ -291,6 +291,10 @@ a {
   transition: 0.3s;
 }
 
+* {
+  border: 1px solid red;
+}
+
 .wrapper {
   max-width: 1260px;
   width: 85%;
@@ -318,7 +322,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 img {
-  display: block;
+  display: inline-block;
+  max-height: 100%;
 }
 
 nav {
@@ -436,12 +441,47 @@ nav ul li a h2:hover, nav ul li a h2:focus, nav ul li a h5:hover, nav ul li a h5
 .blogSection {
   padding: 100px 0;
 }
+.blogSection .blogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogSection .blogPreview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+}
+.blogSection .blogPreview .textContainer, .blogSection .blogPreview .imgContainer {
+  width: 45%;
+}
+.blogSection .blogPreview .imgContainer {
+  position: absolute;
+  background-color: #709b6b;
+  width: 800px;
+  height: 90%;
+}
 
+.blogPreviewOne {
+  text-align: left;
+}
 .blogPreviewOne img {
   -webkit-box-shadow: 15px 15px #709b6b;
           box-shadow: 15px 15px #709b6b;
 }
 
+.blogPreviewTwo {
+  text-align: right;
+}
 .blogPreviewTwo img {
   -webkit-box-shadow: -15px -15px #709b6b;
           box-shadow: -15px -15px #709b6b;
@@ -474,17 +514,16 @@ nav ul li a h2:hover, nav ul li a h2:focus, nav ul li a h5:hover, nav ul li a h5
   padding-bottom: 20px;
 }
 
-.blogContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .backgroundImg {
   width: 100%;
+  height: 65vh;
+  background-image: url(../assets/home-image-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.backgroundImg img {
+  height: auto;
 }
 
 .galleryContainer {
@@ -739,4 +778,17 @@ footer {
 }
 .copyright p a:hover, .copyright p a:focus {
   color: #e4a436;
+}
+
+@media (max-width: 950px) {
+  .blogMainPage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogMainPage .leftColumn, .blogMainPage .rightColumn {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }

@@ -1,3 +1,7 @@
+* {
+    border: 1px solid red;
+}
+
 .wrapper {
     max-width: 1260px;
     width: 85%;
@@ -24,5 +28,6 @@ button, .button {
 }
 
 img {
-	display: block;
+	display: inline-block;
+    max-height: 100%;
 }

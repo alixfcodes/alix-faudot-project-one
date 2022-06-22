@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-
-    <!-- top nav -->
+    <!-- site top nav -->
     <nav>
         <div class="wrapper">
             <ul>
@@ -51,28 +50,33 @@
             <h1>Contact Me</h1>
         </div>
     </header>
-
+    <!-- contact main -->
     <main class="mainBlog">
-
         <div class="wrapper blogMainPage">
-
+            <!--  left column -->
             <div class="leftColumn">
-
-                <div class="recentPosts">
+                <!-- contact section -->
+                <section class="recentPosts">
+                    <!-- social nav -->
                     <ul class="socialNav">
                         <li>
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                            <span class="sr-only">Link to Facebook</span>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                            <span class="sr-only">Link to Twitter</span>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                            <span class="sr-only">Link to LinkedIn</span>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                            <span class="sr-only">Link to Instagram</span>
                         </li>
                     </ul>
+                    <!--  contact info -->
                     <address>
                         <a href="mailto:info@email.com" class="emailAddress">info@email.com</a><br>
                         <a href="tel:+1234567890">123 - 456 - 7890</a><br>
@@ -80,43 +84,30 @@
                         Toronto, ON<br>
                         M5V 2D5
                     </address>
-
-                </div>
-
+                </section>
             </div>
-
+            <!--  right column -->
             <div class="rightColumn">
-
-                <form action="">
-
+                <!-- message form -->
+                <form action="submit">
                     <div class="contactInfo">
                         <label for="name" class="sr-only">Name</label>
                         <input type="text" id="name" class="formName" placeholder="Name" required>
-
                         <label for="email" class="sr-only">Email address</label>
                         <input type="email" id="email" class="formEmail" placeholder="Email address" required>
-
                     </div>
-
                     <label for="message" class="sr-only">Message</label>
                     <textarea id="message" cols="30" rows="10" placeholder="Message"></textarea>
-
                     <button type="submit">Submit</button>
-
                 </form>
             </div>
-
         </div><!-- END of wrapper -->
-
     </main>
-
+    <!-- footer copyright -->
     <footer>
-
         <div class="copyright">
             <p>Copyright © 2022 <a href="https://junocollege.com/" target="_blank">Juno</a></p>
         </div>
-
     </footer>
-    
 </body>
 </html>
