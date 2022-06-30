@@ -15,48 +15,54 @@
     }
 }
 
-.blogSection {
-    padding: 100px 0;
-    .blogContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    // flex-wrap: wrap;
-
+.blogContainer {
+    height: auto;
 }
 
 .blogPreview {
         display: flex;
+        justify-content: space-between;
         flex-wrap: nowrap;
-        position: relative;
-        // justify-content: space-between;
-        .textContainer, .imgContainer {
-            width: 45%;
+        width: 100%;
+        // position: relative;
+        .textContainer {
+            flex-basis: 50%;
+            p {
+                padding-bottom: 20px;
+            }
         }
+        .textContainerOne {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 80px 0 0 80px;
+        }
+        .textContainerTwo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding: 0 80px 80px 0;
+        }
+
         .imgContainer {
-            position: absolute;
-            background-color: $greenGrey;
-            width: 800px;
-            height: 90%;
+            flex-basis: 50%;
         }
     }
-}
+
 .blogPreviewOne {
     text-align: left;
+    margin-bottom: 60px;
+}
+
+.blogPreviewOne, .blogPreviewTwo {
     img {
-        // display: block;
-        // height: 100%;
+        display: inline-block;
         box-shadow: 15px 15px rgba($greenGrey, 1);
     }
 }
 
 .blogPreviewTwo {
     text-align: right;
-    img {
-        // display: block;
-        // height: 100%;
-        box-shadow: -15px -15px rgba($greenGrey, 1);
-    }
 }
 
 .aboutTwoSection {
@@ -85,9 +91,7 @@
 }
 
 .backgroundImg {
-    // display: flex;
-    width: 100%;
-    height: 65vh;
+    height: 500px;
     background-image: url(../assets/home-image-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -103,11 +107,14 @@
         display: flex;
         justify-content: space-between;
         li {
-            flex-basis: calc(100% / 3 - 20px);
+            flex-basis: calc(100% / 3);
+            img {
+                width: 100%;
+            }
         }
         li:nth-child(2) {
-            padding: 0 20px;
-    }
+            margin: 0 20px;
+        }
     }
 }
 

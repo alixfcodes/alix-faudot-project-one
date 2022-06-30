@@ -1,8 +1,8 @@
-footer {
+.linkSection {
     background-color: $whiteShade;
 }
 
-.footerContainer {
+.linkContainer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -22,20 +22,20 @@ footer {
         }
         .footerText {
             padding-left: 20px;
+            h3 { 
+                padding-top: 10px;
+            }
         }
     }
 }
 
-.footerText h3 {
-    padding-top: 10px;
-}
-
 .copyright {
     background-color: $black;
-    padding: 5px 0;
+    padding: 10px 0;
     color: white;
     p {
         padding: 0;
+        margin: 0;
         a {
             transition: 0.3s;
             &:hover, &:focus {
