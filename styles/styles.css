@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -292,14 +293,14 @@ a {
 }
 
 .wrapper {
-  max-width: 1260px;
+  max-width: 1280px;
   width: 85%;
   margin: 0 auto;
 }
 
 button, .button {
   background-color: #e4a436;
-  padding: 10px 22px;
+  padding: 8px 22px;
   font-family: "Abril Fatface";
   font-size: 1rem;
   font-weight: normal;
@@ -334,7 +335,7 @@ nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 nav ul li {
   padding: 0 25px;
@@ -387,6 +388,7 @@ li.currentPage h5 {
   text-align: right;
 }
 .headerHome .headerContainer .imgContainer {
+  width: 42%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,7 +407,7 @@ li.currentPage h5 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 500px;
+  height: 400px;
 }
 .header .headerContainer {
   position: relative;
@@ -423,8 +425,7 @@ li.currentPage h5 {
 
 .aboutSection {
   background-color: #f6f6f6;
-  padding-top: 130px;
-  padding-bottom: 180px;
+  padding: 130px 0 170px 0;
 }
 .aboutSection .aboutContainer {
   display: -webkit-box;
@@ -446,7 +447,9 @@ li.currentPage h5 {
 }
 
 .blogContainer {
-  height: auto;
+  position: relative;
+  height: 800px;
+  width: 100%;
 }
 
 .blogPreview {
@@ -458,14 +461,12 @@ li.currentPage h5 {
           justify-content: space-between;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  width: 100%;
 }
 .blogPreview .textContainer {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  width: 50%;
 }
 .blogPreview .textContainer p {
-  padding-bottom: 20px;
+  padding-bottom: 16px;
 }
 .blogPreview .textContainerOne {
   display: -webkit-box;
@@ -475,10 +476,13 @@ li.currentPage h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 80px 0 0 80px;
+  padding-left: 96px;
 }
 .blogPreview .textContainerTwo {
   display: -webkit-box;
@@ -488,34 +492,42 @@ li.currentPage h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 0 80px 80px 0;
+  padding-right: 80px;
 }
 .blogPreview .imgContainer {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  width: 50%;
 }
 
 .blogPreviewOne {
+  position: absolute;
+  top: -40px;
   text-align: left;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
-
-.blogPreviewOne img, .blogPreviewTwo img {
-  display: inline-block;
-  -webkit-box-shadow: 15px 15px #709b6b;
-          box-shadow: 15px 15px #709b6b;
+.blogPreviewOne img {
+  -webkit-box-shadow: 16px 16px #709b6b, -622px 16px #709b6b;
+          box-shadow: 16px 16px #709b6b, -622px 16px #709b6b;
 }
 
 .blogPreviewTwo {
+  position: absolute;
+  bottom: -40px;
   text-align: right;
+}
+.blogPreviewTwo img {
+  -webkit-box-shadow: 16px 16px #709b6b, 622px 16px #709b6b;
+          box-shadow: 16px 16px #709b6b, 622px 16px #709b6b;
 }
 
 .aboutTwoSection {
   background-color: #f6f6f6;
-  padding: 100px 0;
+  padding: 130px 0 100px 0;
 }
 .aboutTwoSection .aboutTwoContainer {
   display: -webkit-box;
@@ -524,30 +536,32 @@ li.currentPage h5 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: left;
+}
+.aboutTwoSection .aboutTwoContainer .imgContainer {
+  width: 24%;
 }
 .aboutTwoSection .aboutTwoContainer .imgContainer img {
-  display: block;
-  height: 100%;
-  -webkit-box-shadow: 15px 15px #709b6b;
-          box-shadow: 15px 15px #709b6b;
+  display: inline-block;
+  width: 100%;
+  -webkit-box-shadow: 16px 16px #709b6b;
+          box-shadow: 16px 16px #709b6b;
 }
 .aboutTwoSection .aboutTwoContainer .textContainer {
-  margin-left: 150px;
-  width: 75%;
+  text-align: left;
+  width: 68%;
 }
 .aboutTwoSection .aboutTwoContainer .textContainer h2, .aboutTwoSection .aboutTwoContainer .textContainer p {
   padding-bottom: 20px;
 }
 
-.backgroundImg {
+.banner {
   height: 500px;
   background-image: url(../assets/home-image-5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-.backgroundImg img {
+.banner img {
   height: auto;
 }
 
@@ -595,8 +609,7 @@ li.currentPage h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
+  width: 31%;
 }
 .blogMainPage .leftColumn .aboutArticle, .blogMainPage .leftColumn .recentPosts {
   display: -webkit-box;
@@ -612,9 +625,14 @@ li.currentPage h5 {
 }
 .blogMainPage .leftColumn .aboutArticle img, .blogMainPage .leftColumn .recentPosts img {
   margin-bottom: 30px;
+  width: 100%;
 }
 .blogMainPage .leftColumn .aboutArticle h4, .blogMainPage .leftColumn .recentPosts h4 {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+.blogMainPage .leftColumn .aboutArticle p, .blogMainPage .leftColumn .recentPosts p {
+  margin: 0;
+  padding: 0;
 }
 .blogMainPage .leftColumn .aboutArticle .aboutLink, .blogMainPage .leftColumn .recentPosts .aboutLink {
   color: #709b6b;
@@ -622,6 +640,15 @@ li.currentPage h5 {
 }
 .blogMainPage .leftColumn .aboutArticle .aboutLink:hover, .blogMainPage .leftColumn .aboutArticle .aboutLink:focus, .blogMainPage .leftColumn .recentPosts .aboutLink:hover, .blogMainPage .leftColumn .recentPosts .aboutLink:focus {
   color: #e4a436;
+}
+.blogMainPage .leftColumn .aboutArticle .postList, .blogMainPage .leftColumn .recentPosts .postList {
+  list-style: none;
+  padding-left: 10px;
+}
+.blogMainPage .leftColumn .aboutArticle .postList:before, .blogMainPage .leftColumn .recentPosts .postList:before {
+  content: "•";
+  font-size: 13pt;
+  padding-right: 15px;
 }
 .blogMainPage .rightColumn {
   display: -webkit-box;
@@ -631,8 +658,7 @@ li.currentPage h5 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 63%;
-      flex-basis: 63%;
+  width: 66%;
 }
 .blogMainPage .rightColumn .mostRecentPost, .blogMainPage .rightColumn .comments {
   background-color: white;
@@ -640,8 +666,12 @@ li.currentPage h5 {
   margin-bottom: 40px;
   border-bottom: 6px solid #709b6b;
 }
+.blogMainPage .rightColumn h3 {
+  padding: 10px 0;
+}
 .blogMainPage .rightColumn .commentOne {
   border-bottom: none;
+  margin-bottom: 20px;
 }
 
 .comments {
@@ -673,7 +703,7 @@ li.currentPage h5 {
   list-style: none;
   text-decoration: none;
   padding-right: 30px;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 .socialNav li i {
   color: #345231;
@@ -690,6 +720,7 @@ address {
 
 .emailAddress {
   font-weight: bold;
+  padding: 20px 0;
 }
 
 form {
@@ -706,7 +737,7 @@ form {
 form input, form textarea {
   border: none;
   font-family: "Montserrat";
-  padding: 30px;
+  padding: 25px;
   margin-bottom: 20px;
   accent-color: #e4a436;
 }
@@ -792,7 +823,7 @@ form .contactInfo .formName, form .contactInfo .formEmail {
 
 .copyright {
   background-color: #1f1818;
-  padding: 10px 0;
+  padding: 6px 0;
   color: white;
 }
 .copyright p {
@@ -815,7 +846,132 @@ form .contactInfo .formName, form .contactInfo .formEmail {
             flex-direction: column;
   }
   .blogMainPage .leftColumn, .blogMainPage .rightColumn {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 3.9rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  h5 {
+    font-size: 0.9rem;
+  }
+
+  .header .headerContainer h1 {
+    font-size: 3.5rem;
+    bottom: -20px;
+  }
+
+  .blogMainPage .leftColumn .aboutArticle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blogMainPage .leftColumn .aboutArticle img {
+    width: 50%;
+  }
+  .blogMainPage .comments {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogMainPage .comments .commentContent {
+    width: 100%;
+  }
+  .blogMainPage .comments .commentPhoto {
+    margin-bottom: 20px;
+  }
+  .blogMainPage .linkContainer .footerContent {
+    width: 100%;
+  }
+  .blogMainPage form .contactInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+  }
+  .blogMainPage form .contactInfo .formName, .blogMainPage form .contactInfo .formEmail {
+    width: 100%;
+  }
+  .blogMainPage form input, .blogMainPage form textarea {
+    padding: 25px;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .header .headerContainer h1 {
+    font-size: 3rem;
+    bottom: -24px;
+  }
+
+  form input, form textarea {
+    padding: 20px;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 490px) {
+  body {
+    font-size: 0.8rem;
+  }
+
+  .header .headerContainer h1 {
+    font-size: 2.5rem;
+    bottom: -28px;
+  }
+
+  button, .button {
+    padding: 8px 18px;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 410px) {
+  body {
+    font-size: 0.7rem;
+  }
+
+  .header .headerContainer h1 {
+    font-size: 2rem;
+    bottom: -32px;
+  }
+}
+@media (max-width: 330px) {
+  .header .headerContainer h1 {
+    font-size: 1.9rem;
+    bottom: -33px;
   }
 }

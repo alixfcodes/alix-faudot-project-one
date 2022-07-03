@@ -15,7 +15,6 @@
             align-items: center;
             position: relative;
             .circleText {
-                // height: 40%;
                 position: absolute;
                 left: 0;
             }
@@ -25,6 +24,7 @@
             }
         }
         .imgContainer {
+            width: 42%;
             display: flex;
             position: relative; 
             img {
@@ -46,7 +46,7 @@
     background-repeat: no-repeat;
     background-position: center;
     // max-height: 30vh;
-    height: 500px;
+    height: 400px;
     .headerContainer {
         position: relative;
         height: 100%;
