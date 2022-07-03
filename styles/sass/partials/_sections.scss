@@ -4,7 +4,7 @@
 
 .aboutSection {
     background-color: $whiteShade;
-    padding: 130px 0 170px 0;
+    padding: 120px 0 150px 0;
     .aboutContainer {
         display: flex;
         flex-direction: column;
@@ -20,7 +20,7 @@
 
 .blogContainer {
     position: relative;
-    height: 800px;
+    height: 830px;
     width: 100%;
     // height: auto;
 }
@@ -31,8 +31,8 @@
     flex-wrap: nowrap;
     .textContainer {
         width: 50%;
-        p {
-            padding-bottom: 16px;
+        h3, p {
+            padding-bottom: 12px;
         }
     }
     .textContainerOne {
@@ -40,14 +40,14 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
-        padding-left: 96px;
+        padding-left: 118px;
     }
     .textContainerTwo {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
-        padding-right: 80px;
+        padding-right: 100px;
     }
     .imgContainer {
         width: 50%;
@@ -58,9 +58,8 @@
     position: absolute;
     top: -40px;
     text-align: left;
-    margin-bottom: 80px;
     img {
-        box-shadow: 16px 16px rgba($greenGrey, 1), -622px 16px rgba($greenGrey, 1);
+        box-shadow: 18px 18px rgba($greenGrey, 1), -622px 18px rgba($greenGrey, 1);
     }
 }
 
@@ -69,7 +68,7 @@
     bottom: -40px;
     text-align: right;
     img {
-        box-shadow: 16px 16px rgba($greenGrey, 1), 622px 16px rgba($greenGrey, 1);
+        box-shadow: 18px 18px rgba($pine, 1), 622px 18px rgba($pine, 1);
     }
 }
 
@@ -86,12 +85,12 @@
             img {
                 display: inline-block;
                 width: 100%;
-                box-shadow: 16px 16px rgba($greenGrey, 1);
+                box-shadow: 18px 18px rgba($greenGrey, 1);
             }
         }
         .textContainer {
             text-align: left;
-            width: 68%;
+            width: 66%;
             h2, p {
                 padding-bottom: 20px;
             }
@@ -102,13 +101,14 @@
 // banner image
 
 .banner {
-    height: 500px;
+    height: 550px;
     background-image: url(../assets/home-image-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     img {
-        height: auto;
+        height: fit-content;
+
     }
 }
 
@@ -126,8 +126,44 @@
             }
         }
         li:nth-child(2) {
-            margin: 0 20px;
+            margin: 0 40px;
         }
+    }
+}
+
+// link section
+
+.linkSection {
+    background-color: $whiteShade;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    .linkContent {
+        width: 49%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        i {
+            display: flex;
+            align-self: flex-start;
+            background-color: $accent;
+            border-radius: 50%;
+            padding: 16px;
+        }
+        .linkText {
+            padding-left: 20px;
+            h3 { 
+                padding-top: 12px;
+            }
+        }
+    }
+    .linkPhotos, .linkAbout {
+        margin-bottom: 40px;
     }
 }
 
@@ -152,7 +188,7 @@
             background-color: white;
             padding: 40px;
             margin-bottom: 20px;
-            img {
+            .aboutImg {
                 margin-bottom: 30px;
                 width: 100%;
             }
@@ -223,12 +259,12 @@
         list-style: none;
         text-decoration: none;
         padding-right: 30px;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
         i {
             color: $pine;
             transition: 0.3s;
             &:hover, &:focus {
-            color: $greenGrey;
+                color: $greenGrey;
             }
         }
     }

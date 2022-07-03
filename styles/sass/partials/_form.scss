@@ -6,7 +6,7 @@ form {
     input, textarea {
             border: none;
             font-family: $bodyFont;
-            padding: 25px;
+            padding: 30px;
             margin-bottom: 20px;
             accent-color: $accent;
             &::placeholder {
@@ -15,6 +15,7 @@ form {
             }
         }
     textarea {
+        padding-top: 40px;
         resize: none;
     }
     .contactInfo {

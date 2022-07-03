@@ -9,8 +9,9 @@
 }
 
 button, .button {
+    color: $black;
     background-color: $accent;
-    padding: 8px 22px;
+    padding: 8px 16px;
     font-family: $headingFont;
     font-size: 1rem;
     font-weight: normal;
@@ -23,6 +24,7 @@ button, .button {
     cursor: pointer;
     &:hover, &:focus {
         border: 3px solid $accent;
+        color: $black;
         background-color: $whiteShade;
     }
 }

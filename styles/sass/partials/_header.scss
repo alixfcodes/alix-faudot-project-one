@@ -9,30 +9,28 @@
         display: flex;
         justify-content: space-between;
         .textContainer {
-            width: 58%;
+            width: 57%;
             display: flex;
             justify-content: flex-end;
             align-items: center;
             position: relative;
             .circleText {
                 position: absolute;
-                left: 0;
+                left: -20px;
             }
             h1 {
-                font-size: 7.3rem;
+                font-size: 8rem;
                 text-align: right;
             }
         }
         .imgContainer {
-            width: 42%;
+            width: 41%;
             display: flex;
             position: relative; 
             img {
-                // height: 100%;
                 position: absolute;
-                right: 15px;
-                bottom: -80px;
-                box-shadow: 15px 15px rgba(white, 1);
+                bottom: -70px;
+                box-shadow: 18px 18px rgba(white, 1);
             }
         }
     }
