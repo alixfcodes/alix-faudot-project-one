@@ -21,7 +21,7 @@
 .blogContainer {
     position: relative;
     height: 830px;
-    width: 100%;
+    // width: 100%;
     // height: auto;
 }
 
@@ -59,6 +59,8 @@
     top: -40px;
     text-align: left;
     img {
+        width: 100%;
+        height: auto;
         box-shadow: 18px 18px rgba($greenGrey, 1), -622px 18px rgba($greenGrey, 1);
     }
 }
@@ -68,6 +70,8 @@
     bottom: -40px;
     text-align: right;
     img {
+        width: 100%;
+        height: auto;
         box-shadow: 18px 18px rgba($pine, 1), 622px 18px rgba($pine, 1);
     }
 }
@@ -101,7 +105,7 @@
 // banner image
 
 .banner {
-    height: 550px;
+    height: 500px;
     background-image: url(../assets/home-image-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -181,7 +185,7 @@
     .leftColumn {
         display: flex;
         flex-direction: column;
-        width: 31%;
+        width: 30.5%;
         .aboutArticle, .recentPosts {
             display: flex;
             flex-direction: column;
@@ -196,8 +200,8 @@
                 padding-bottom: 20px;
             }
             p {
-            margin: 0;
-            padding: 0;
+                margin: 0;
+                padding: 0;
             }
             .aboutLink {
                 color: $greenGrey;
@@ -242,7 +246,7 @@
     align-items: flex-start;
     justify-content: space-between;
     .commentContent {
-        width: 85%;
+        width: 86%;
         p {
             margin: 0;
             padding: 0;

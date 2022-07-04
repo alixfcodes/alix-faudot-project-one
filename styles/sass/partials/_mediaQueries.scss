@@ -2,6 +2,58 @@
 
 
 @media (max-width: 1460px) {
+
+.blogContainer {
+    width: 85%;
+    height: auto;
+}
+
+.blogPreview {
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    width: 100%;
+    // padding: 10%;
+    // flex-wrap: wrap;
+    .textContainer {
+        width: 100%;
+    }
+    .textContainerOne {
+        padding-left: 0;
+        padding-top: 60px;
+    }
+    .textContainerTwo {
+        padding-right: 0;
+        padding-bottom: 60px;
+    }
+    .imgContainer {
+        width: 100%;
+    }
+}
+
+.blogPreviewOne {
+    position: relative;
+    top: -40px;
+    img {
+        width: 60%;
+        height: auto;
+        box-shadow: 18px 18px rgba($greenGrey, 1), -120px 18px rgba($greenGrey, 1);
+    }
+}
+
+.blogPreviewTwo {
+    position: relative;
+    bottom: -40px;
+    img {
+        width: 60%;
+        height: auto;
+        box-shadow: 18px 18px rgba($pine, 1), 120px 18px rgba($pine, 1);
+    }
+}
+
+// Blog page
     .blogMainPage {
         flex-direction: column;
         .leftColumn, .rightColumn {
@@ -30,8 +82,28 @@
     }
 }
 
-
 @media (max-width: 1024px) {
+
+
+
+    // about 2 section
+.aboutTwoSection {
+
+        .aboutTwoContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .imgContainer {
+            width: 50%;
+        }
+        .textContainer {
+            margin-top: 50px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+}
 
     form {
         .contactInfo {
@@ -48,6 +120,18 @@
         }
     }
 
+    // link section
+    .linkContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .linkContent {
+            width: 100%;
+        }
+        .linkPhotos, .linkAbout, .linkBlog {
+            margin-bottom: 20px;
+        }
+    }
 
     // blog comments
     .comments {
@@ -61,7 +145,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
 
     // font sizes
 
@@ -94,32 +178,29 @@
         .headerContainer h1 {
             font-size: 3.5rem; 
             bottom: -20px;
-            }
-        }
-
-// home link section
-    .linkContainer {
-        .footerContent {
-            width: 100%;
         }
     }
 
-    // form
-    form {
-        .contactInfo {
-            flex-direction: column;
-            justify-content: center;
-            align-items: space-between;
-            .formName, .formEmail {
-            width: 100%;
-            }
-        }
-        input, textarea {
-            padding: 25px;
-            margin-bottom: 15px;
-        }
-    }
 
+    .blogPreviewOne {
+    position: relative;
+    top: -40px;
+    img {
+        width: 100%;
+        height: auto;
+        box-shadow: 18px 18px rgba($greenGrey, 1), -120px 18px rgba($greenGrey, 1);
+    }
+}
+
+.blogPreviewTwo {
+    position: relative;
+    bottom: -40px;
+    img {
+        width: 100%;
+        height: auto;
+        box-shadow: 18px 18px rgba($pine, 1), 120px 18px rgba($pine, 1);
+    }
+}
 }
 
 @media (max-width: 640px) {
@@ -136,7 +217,35 @@
         }
     }
 
+    // about 2 section
+    .aboutTwoSection {
+        .aboutTwoContainer {
+            .imgContainer {
+                width: 100%;
+            }
+        }
+    }
+    // gallery
 
+    .galleryContainer {
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: space-between;
+            li {
+                flex-basis: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            li:nth-child(2) {
+                margin: 20px 0;
+            }
+        }
+    }
+
+    // blog
     .blogMainPage {
         .leftColumn {
             .aboutArticle {
@@ -157,14 +266,6 @@
                 }
             }
 
-        }
-    }
-
-    // form
-    form {
-        input, textarea {
-            padding: 20px;
-            margin-bottom: 12px;
         }
     }
 }
