@@ -9,25 +9,29 @@
         display: flex;
         justify-content: space-between;
         .textContainer {
-            width: 57%;
+            width: 58%;
             display: flex;
             justify-content: flex-end;
             align-items: center;
             position: relative;
-            .circleText {
-                position: absolute;
-                left: -20px;
-            }
             h1 {
-                font-size: 8rem;
-                text-align: right;
+                font-size: 7rem;
+                line-height: 8rem;
+            }
+            h1::before {
+                content: url(../assets/circle-text.png);
+                top: 36%;
+                right: 71%;
+                position: absolute;
             }
         }
         .imgContainer {
-            width: 41%;
+            width: 40%;
             display: flex;
             position: relative; 
             img {
+                width: 100%;
+                height: auto;
                 position: absolute;
                 bottom: -70px;
                 box-shadow: 18px 18px rgba(white, 1);

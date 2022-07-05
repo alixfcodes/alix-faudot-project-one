@@ -13,10 +13,11 @@
 </head>
 <body>
     <!-- site top nav -->
-    <nav>
+    <nav class="siteNav">
         <div class="wrapper">
-            <ul>
-                <li>
+            <!--  top menu nav -->
+            <ul class="topNav">
+                <li class="currentPage">
                     <a href="./index.html">
                         <h5>Home</h5>
                     </a>
@@ -36,12 +37,56 @@
                         <h5>Blog</h5>
                     </a>
                 </li>
-                <li class="currentPage">
+                <li>
                     <a href="./contact.html">
                         <h5>Contact</h5>
                     </a>
                 </li>
             </ul>
+
+            <!--  slide out hamburger menu -->
+			<input type="checkbox" id="hamburgerMenu">
+			<label for="hamburgerMenu" class="menuButton">
+				<i class="fa-solid fa-bars" alt="Menu button"></i>
+			</label>
+
+            <!-- slide out nav content -->
+			<div class="slideOutNav">
+				<div class="buttonContainer">
+					<!-- <button class="menuClose">x</button> -->
+                    <!-- using label instead of button to allow for slide menu to close -->
+					<label for="hamburgerMenu" class="menuClose"><i class="fa-solid fa-xmark" alt="Close button"></i></label>
+				</div>
+				<nav>
+					<ul class="sideNav">
+                        <li>
+                            <a href="./index.html">
+                                <h2>Willow</h2>
+                            </a>
+                        </li>
+                        <li class="currentPage">
+                            <a href="./index.html">
+                                <h5>Home</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h5>About</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./blog.html">
+                                <h5>Blog</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">
+                                <h5>Contact</h5>
+                            </a>
+                        </li>
+					</ul>
+				</nav>
+			</div><!-- END of slide out nav -->
         </div><!-- END of wrapper -->
     </nav>
     <!-- contact header -->
@@ -60,26 +105,26 @@
                     <!-- social nav -->
                     <ul class="socialNav">
                         <li>
-                            <a href="#"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
                             <span class="sr-only">Link to Facebook</span>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
                             <span class="sr-only">Link to Twitter</span>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
                             <span class="sr-only">Link to LinkedIn</span>
                         </li>
                         <li>
-                            <a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                             <span class="sr-only">Link to Instagram</span>
                         </li>
                     </ul>
                     <!--  contact info -->
                     <address>
                         <div class="emailAddress">
-                            <a href="mailto:info@email.com" >info@email.com</a><br>
+                            <a href="mailto:info@email.com">info@email.com</a><br>
                         </div>
                         <a href="tel:+1234567890">123 - 456 - 7890</a><br>
                         123 Queen Street West, Unit 10<br>
@@ -108,7 +153,7 @@
     <!-- footer copyright -->
     <footer>
         <div class="copyright">
-            <p>Copyright © 2022 <a href="https://junocollege.com/" target="_blank">Juno</a></p>
+            <p>Copyright © 2022 <a href="https://junocollege.com/" target="_blank">Juno College</a></p>
         </div>
     </footer>
 </body>

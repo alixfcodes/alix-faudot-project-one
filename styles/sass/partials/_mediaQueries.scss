@@ -1,7 +1,30 @@
 
 
-
 @media (max-width: 1460px) {
+
+.headerHome {
+    height: 500px;
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        .textContainer {
+            display: none;
+        }
+        .imgContainer {
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 500px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
 
 .blogContainer {
     width: 85%;
@@ -9,14 +32,11 @@
 }
 
 .blogPreview {
-    // position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: space-between;
     width: 100%;
-    // padding: 10%;
-    // flex-wrap: wrap;
     .textContainer {
         width: 100%;
     }
@@ -77,7 +97,6 @@
                     flex-basis: 60%;
                 }
             }
-
         }
     }
 }
@@ -85,25 +104,33 @@
 @media (max-width: 1024px) {
 
 
+    .headerHome {
+        height: 550px;
+        .headerContainer {
+            .imgContainer {
+                width: 50%;
+                top: 550px;
+            }
+        }
+    }
 
     // about 2 section
-.aboutTwoSection {
-
+    .aboutTwoSection {
         .aboutTwoContainer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        .imgContainer {
-            width: 50%;
-        }
-        .textContainer {
-            margin-top: 50px;
-            text-align: center;
-            width: 100%;
+            .imgContainer {
+                width: 50%;
+            }
+            .textContainer {
+                margin-top: 50px;
+                text-align: center;
+                width: 100%;
+            }
         }
     }
-}
 
     form {
         .contactInfo {
@@ -145,7 +172,16 @@
     }
 }
 
-@media (max-width: 720px) {
+
+@media (min-width: 781px) {
+
+    // slide out nav
+    .menuButton {
+            display: none;
+        }
+    }
+
+@media (max-width: 780px) {
 
     // font sizes
 
@@ -169,38 +205,48 @@
         font-size: 1.1rem;
     }
 
-    h5 {
-        font-size: 0.9rem;
-    }
-
-    // header
-    .header {
-        .headerContainer h1 {
-            font-size: 3.5rem; 
-            bottom: -20px;
+    // nav 
+    .siteNav {
+        .topNav {
+            display: none;
         }
     }
 
+    // header
+    .headerHome {
+        height: 500px;
+        .headerContainer {
+            .imgContainer {
+                width: 70%;
+                top: 500px;
+            }
+        }
+    }
 
     .blogPreviewOne {
-    position: relative;
-    top: -40px;
-    img {
-        width: 100%;
-        height: auto;
-        box-shadow: 18px 18px rgba($greenGrey, 1), -120px 18px rgba($greenGrey, 1);
+        position: relative;
+        top: -40px;
+        img {
+            width: 100%;
+            height: auto;
+            box-shadow: 18px 18px rgba($greenGrey, 1), -120px 18px rgba($greenGrey, 1);
+        }
     }
-}
 
-.blogPreviewTwo {
-    position: relative;
-    bottom: -40px;
-    img {
-        width: 100%;
-        height: auto;
-        box-shadow: 18px 18px rgba($pine, 1), 120px 18px rgba($pine, 1);
+    .blogPreviewTwo {
+        position: relative;
+        bottom: -40px;
+        img {
+            width: 100%;
+            height: auto;
+            box-shadow: 18px 18px rgba($pine, 1), 120px 18px rgba($pine, 1);
+        }
     }
-}
+
+    // banner
+    .banner {
+        height: 400px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -210,10 +256,13 @@
     }
 
     // header
-    .header {
-        .headerContainer h1 {
-            font-size: 3rem; 
-            bottom: -24px;
+    .headerHome {
+        height: 450px;
+        .headerContainer {
+            .imgContainer {
+                width: 70%;
+                top: 450px;
+            }
         }
     }
 
@@ -225,6 +274,12 @@
             }
         }
     }
+
+    // banner
+    .banner {
+        height: 300px;
+    }
+
     // gallery
 
     .galleryContainer {
@@ -277,11 +332,20 @@
     }
 
     // header
-    .header {
-        .headerContainer h1 {
-            font-size: 2.7rem; 
-            bottom: -28px;
+
+    .headerHome {
+        height: 350px;
+        .headerContainer {
+            .imgContainer {
+                width: 85%;
+                top: 350px;
+            }
         }
+    }
+
+    // banner 
+    .banner {
+        height: 200px;
     }
 
     // button
@@ -289,15 +353,4 @@
         padding: 8px 18px;
         font-size: 0.8rem;
     }
-}
-
-@media (max-width: 440px) {
-
-    .header {
-        .headerContainer h1 {
-            font-size: 2.4rem; 
-            bottom: -28px;
-        }
-    }
-
 }

@@ -325,10 +325,13 @@ img {
   display: inline-block;
 }
 
-nav {
+.siteNav {
   background-color: #345231;
+  z-index: 10;
+  position: sticky;
+  top: 0;
 }
-nav ul {
+.siteNav .topNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,19 +343,94 @@ nav ul {
           align-items: center;
   padding: 25px 0;
 }
-nav ul li {
+.siteNav .topNav li {
   padding: 0 25px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-nav ul li h2, nav ul li h5 {
+.siteNav .topNav li h2, .siteNav .topNav li h5 {
   color: #f6f6f6;
 }
-nav ul li h2:hover, nav ul li h2:focus, nav ul li h5:hover, nav ul li h5:focus {
+.siteNav .topNav li h2:hover, .siteNav .topNav li h2:focus, .siteNav .topNav li h5:hover, .siteNav .topNav li h5:focus {
+  color: #e4a436;
+}
+.siteNav .topNav li.currentPage h5 {
+  color: #e4a436;
+}
+.siteNav input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+.siteNav input[type=checkbox]:checked ~ .slideOutNav {
+  left: 0;
+}
+.siteNav input[type=checkbox]:focus + label {
+  color: #e4a436;
+}
+.siteNav .menuButton i {
+  cursor: pointer;
+  padding: 20px 0;
+  font-size: 2rem;
+  color: #f6f6f6;
+}
+.siteNav .menuButton i:hover, .siteNav .menuButton i:focus {
   color: #e4a436;
 }
 
-li.currentPage h5 {
+.slideOutNav {
+  background-color: #345231;
+  border-right: 1px solid #e4a436;
+  position: fixed;
+  top: 0;
+  left: -400px;
+  height: 100vh;
+  width: 100%;
+  max-width: 400px;
+  padding: 35px 50px;
+  z-index: 20;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.slideOutNav .buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.slideOutNav .buttonContainer label {
+  padding: 10px 0 10px 20px;
+}
+.slideOutNav .menuClose {
+  font-family: "Montserrat";
+  color: #f6f6f6;
+  font-size: 1.5rem;
+  display: block;
+  cursor: pointer;
+}
+.slideOutNav .menuClose:hover, .slideOutNav .menuClose:focus {
+  color: #e4a436;
+}
+.slideOutNav li {
+  padding: 15px 0px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+.slideOutNav li h2 {
+  color: #e4a436;
+}
+.slideOutNav li h5 {
+  color: #f6f6f6;
+}
+.slideOutNav li h5:hover, .slideOutNav li h5:focus {
   color: #e4a436;
 }
 
@@ -370,7 +448,7 @@ li.currentPage h5 {
           justify-content: space-between;
 }
 .headerHome .headerContainer .textContainer {
-  width: 57%;
+  width: 58%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,22 +460,26 @@ li.currentPage h5 {
           align-items: center;
   position: relative;
 }
-.headerHome .headerContainer .textContainer .circleText {
-  position: absolute;
-  left: -20px;
-}
 .headerHome .headerContainer .textContainer h1 {
-  font-size: 8rem;
-  text-align: right;
+  font-size: 7rem;
+  line-height: 8rem;
+}
+.headerHome .headerContainer .textContainer h1::before {
+  content: url(../assets/circle-text.png);
+  top: 36%;
+  right: 71%;
+  position: absolute;
 }
 .headerHome .headerContainer .imgContainer {
-  width: 41%;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 .headerHome .headerContainer .imgContainer img {
+  width: 100%;
+  height: auto;
   position: absolute;
   bottom: -70px;
   -webkit-box-shadow: 18px 18px white;
@@ -849,6 +931,45 @@ form .contactInfo .formName, form .contactInfo .formEmail {
 }
 
 @media (max-width: 1460px) {
+  .headerHome {
+    height: 500px;
+  }
+  .headerHome .headerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .headerHome .headerContainer .textContainer {
+    display: none;
+  }
+  .headerHome .headerContainer .imgContainer {
+    width: 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 500px;
+  }
+  .headerHome .headerContainer .imgContainer img {
+    width: 100%;
+    height: auto;
+  }
+
   .blogContainer {
     width: 85%;
     height: auto;
@@ -945,6 +1066,14 @@ form .contactInfo .formName, form .contactInfo .formEmail {
   }
 }
 @media (max-width: 1024px) {
+  .headerHome {
+    height: 550px;
+  }
+  .headerHome .headerContainer .imgContainer {
+    width: 50%;
+    top: 550px;
+  }
+
   .aboutTwoSection .aboutTwoContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1019,7 +1148,12 @@ form .contactInfo .formName, form .contactInfo .formEmail {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 720px) {
+@media (min-width: 781px) {
+  .menuButton {
+    display: none;
+  }
+}
+@media (max-width: 780px) {
   body {
     font-size: 0.9rem;
   }
@@ -1040,13 +1174,16 @@ form .contactInfo .formName, form .contactInfo .formEmail {
     font-size: 1.1rem;
   }
 
-  h5 {
-    font-size: 0.9rem;
+  .siteNav .topNav {
+    display: none;
   }
 
-  .header .headerContainer h1 {
-    font-size: 3.5rem;
-    bottom: -20px;
+  .headerHome {
+    height: 500px;
+  }
+  .headerHome .headerContainer .imgContainer {
+    width: 70%;
+    top: 500px;
   }
 
   .blogPreviewOne {
@@ -1070,19 +1207,30 @@ form .contactInfo .formName, form .contactInfo .formEmail {
     -webkit-box-shadow: 18px 18px #345231, 120px 18px #345231;
             box-shadow: 18px 18px #345231, 120px 18px #345231;
   }
+
+  .banner {
+    height: 400px;
+  }
 }
 @media (max-width: 640px) {
   body {
     font-size: 0.9rem;
   }
 
-  .header .headerContainer h1 {
-    font-size: 3rem;
-    bottom: -24px;
+  .headerHome {
+    height: 450px;
+  }
+  .headerHome .headerContainer .imgContainer {
+    width: 70%;
+    top: 450px;
   }
 
   .aboutTwoSection .aboutTwoContainer .imgContainer {
     width: 100%;
+  }
+
+  .banner {
+    height: 300px;
   }
 
   .galleryContainer ul {
@@ -1144,19 +1292,20 @@ form .contactInfo .formName, form .contactInfo .formEmail {
     font-size: 0.8rem;
   }
 
-  .header .headerContainer h1 {
-    font-size: 2.7rem;
-    bottom: -28px;
+  .headerHome {
+    height: 350px;
+  }
+  .headerHome .headerContainer .imgContainer {
+    width: 85%;
+    top: 350px;
+  }
+
+  .banner {
+    height: 200px;
   }
 
   button, .button {
     padding: 8px 18px;
     font-size: 0.8rem;
-  }
-}
-@media (max-width: 440px) {
-  .header .headerContainer h1 {
-    font-size: 2.4rem;
-    bottom: -28px;
   }
 }

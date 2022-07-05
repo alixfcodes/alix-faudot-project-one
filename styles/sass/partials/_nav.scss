@@ -1,6 +1,23 @@
-nav {
+// Skip link
+
+// .skipLink {
+//     position: absolute;
+//     left: -1000px;
+//     top: 20px;
+//     background-color: $solidWhite;
+//     color: black;
+//     z-index: 10;
+//     &:focus {
+//         left: 0;
+//     }
+// }
+
+.siteNav {
     background-color: $pine;
-    ul {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    .topNav {
         display: flex; 
         justify-content: center;
         align-items: center;
@@ -11,14 +28,80 @@ nav {
             h2, h5 {
                 color: $whiteShade;
                 &:hover, &:focus {
-                color: $accent;
+                    color: $accent;
                 }
             }
+        }
+        li.currentPage h5 {
+            color: $accent;
+        }
+    }
+    input[type=checkbox] {
+        opacity: 0;
+        position: absolute;
+        &:checked ~ .slideOutNav {
+            left: 0;
+        }
+        &:focus + label {
+			color: $accent;
+		}
+    }
+    .menuButton i {
+        cursor: pointer;
+        padding: 20px 0;
+        font-size: 2rem;
+        color: $whiteShade;
+        &:hover, &:focus {
+            color: $accent;
         }
     }
 }
 
-li.currentPage h5 {
-    color: $accent;
+// // Slide Out Nav
+
+.slideOutNav {
+    background-color: $pine;
+    border-right: 1px solid $accent;
+    position: fixed;
+    top: 0; 
+    left: -400px;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 50px;
+    z-index: 20;
+    transition: 0.75s;
+    display: flex;
+    flex-direction: column;
+    .buttonContainer {
+        display: flex;
+        justify-content: flex-end;
+        label {
+			padding: 10px 0 10px 20px;
+		}
+    }
+    .menuClose {
+        font-family: $bodyFont;
+        color: $whiteShade;
+        font-size: 1.5rem;
+        display: block;
+        cursor: pointer;
+        &:hover, &:focus {
+            color: $accent;
+        }
+    }
+    li {
+        padding: 15px 0px;
+        transition: 0.75s;
+        h2 {
+            color: $accent;
+        }
+        h5 {
+            color: $whiteShade;
+            &:hover, &:focus {
+                color: $accent;
+            }
+        }
+    }
 }
 

@@ -13,10 +13,11 @@
 </head>
 <body>
     <!-- site top nav -->
-    <nav>
+    <nav class="siteNav">
         <div class="wrapper">
-            <ul>
-                <li>
+            <!--  top menu nav -->
+            <ul class="topNav">
+                <li class="currentPage">
                     <a href="./index.html">
                         <h5>Home</h5>
                     </a>
@@ -31,7 +32,7 @@
                         <h2>Willow</h2>
                     </a>
                 </li>
-                <li class="currentPage">
+                <li>
                     <a href="./blog.html">
                         <h5>Blog</h5>
                     </a>
@@ -42,6 +43,50 @@
                     </a>
                 </li>
             </ul>
+
+            <!--  slide out hamburger menu -->
+			<input type="checkbox" id="hamburgerMenu">
+			<label for="hamburgerMenu" class="menuButton">
+				<i class="fa-solid fa-bars" alt="Menu button"></i>
+			</label>
+
+            <!-- slide out nav content -->
+			<div class="slideOutNav">
+				<div class="buttonContainer">
+					<!-- <button class="menuClose">x</button> -->
+                    <!-- using label instead of button to allow for slide menu to close -->
+					<label for="hamburgerMenu" class="menuClose"><i class="fa-solid fa-xmark" alt="Close button"></i></label>
+				</div>
+				<nav>
+					<ul class="sideNav">
+                        <li>
+                            <a href="./index.html">
+                                <h2>Willow</h2>
+                            </a>
+                        </li>
+                        <li class="currentPage">
+                            <a href="./index.html">
+                                <h5>Home</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h5>About</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./blog.html">
+                                <h5>Blog</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">
+                                <h5>Contact</h5>
+                            </a>
+                        </li>
+					</ul>
+				</nav>
+			</div><!-- END of slide out nav -->
         </div><!-- END of wrapper -->
     </nav>
     <!-- blog header -->
@@ -58,7 +103,7 @@
                 <!-- about article -->
                 <article class="aboutArticle">
                     <div class="aboutImg">
-                        <img src="./assets/blog-image-2.jpg" alt="">
+                        <img src="./assets/blog-image-2.jpg" alt="Headshot of a young woman (Willow)  wearing a yellow raincoat, taken through a green palm leaf">
                     </div>
                     <div class="aboutText">
                         <h4>About Willow</h4>
@@ -101,7 +146,7 @@
                 <div>
                     <!-- comment 1 -->
                     <article class="comments commentOne">
-                        <img class="commentPhoto" src="./assets/blog-image-3.jpg" alt="">
+                        <img class="commentPhoto" src="./assets/blog-image-3.jpg" alt="Headshot of a young woman with braided hair wearing a black hat ">
                         <div class="commentContent">
                             <p><date>Tuesday June 21st, 2022</date> by Barb</p>
                             <p>Fusce venicu dolor arcu. sit amet blandit dolor molls nec. Donec viverra eleitend acus. vitae ulamcoroer metus. Sed solicitudin guis nunc solicitudin ultrices. Donec euismod scelerisque eu varus rsus, eu allquet arcu.</p>
@@ -109,7 +154,7 @@
                     </article>
                     <!-- comment 2 -->
                     <article class="comments commentTwo">
-                        <img class="commentPhoto" src="./assets/blog-image-4.jpg" alt="">
+                        <img class="commentPhoto" src="./assets/blog-image-4.jpg" alt="Headshot of a young man with dark hair, taken through green leaves">
                         <div class="commentContent">
                             <p><date>Sunday June 26th, 2022</date> by Daisy</p>
                             <p>Doner viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
@@ -134,7 +179,7 @@
     <!-- site footer -->
     <footer>
         <div class="copyright">
-            <p>Copyright © 2022 <a href="https://junocollege.com/" target="_blank">Juno</a></p>
+            <p>Copyright © 2022 <a href="https://junocollege.com/" target="_blank">Juno College</a></p>
         </div>
     </footer>
 </body>

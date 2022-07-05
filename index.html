@@ -12,10 +12,15 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+
+    <!-- skip to main content link
+    <a href="#mainContent" class="skip-link">Skip to main content.</a> -->
+
     <!-- site top nav -->
-    <nav>
+    <nav class="siteNav">
         <div class="wrapper">
-            <ul>
+            <!--  top menu nav -->
+            <ul class="topNav">
                 <li class="currentPage">
                     <a href="./index.html">
                         <h5>Home</h5>
@@ -42,6 +47,50 @@
                     </a>
                 </li>
             </ul>
+
+            <!--  slide out hamburger menu -->
+			<input type="checkbox" id="hamburgerMenu">
+			<label for="hamburgerMenu" class="menuButton">
+				<i class="fa-solid fa-bars" alt="Menu button"></i>
+			</label>
+
+            <!-- slide out nav content -->
+			<div class="slideOutNav">
+				<div class="buttonContainer">
+					<!-- <button class="menuClose">x</button> -->
+                    <!-- using label instead of button to allow for slide menu to close -->
+					<label for="hamburgerMenu" class="menuClose"><i class="fa-solid fa-xmark" alt="Close button"></i></label>
+				</div>
+				<nav>
+					<ul class="sideNav">
+                        <li>
+                            <a href="./index.html">
+                                <h2>Willow</h2>
+                            </a>
+                        </li>
+                        <li class="currentPage">
+                            <a href="./index.html">
+                                <h5>Home</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h5>About</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./blog.html">
+                                <h5>Blog</h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">
+                                <h5>Contact</h5>
+                            </a>
+                        </li>
+					</ul>
+				</nav>
+			</div><!-- END of slide out nav -->
         </div><!-- END of wrapper -->
     </nav>
     <!-- home header -->
@@ -50,12 +99,12 @@
             <div class="wrapper headerContainer">
 
                 <div class="textContainer">
-                    <div class="circleText"><img src="./assets/circle-text.png" alt="Daily musings of"></div>
+                    <!-- <div class="circleText"><img src="./assets/circle-text.png" alt="Daily musings of"></div> -->
                     <h1>Willow</h1>
                 </div>
 
                 <div class="imgContainer">
-                    <img src="./assets/home-image-1.jpg" alt="Portrait of Willow">
+                    <img src="./assets/home-image-1.jpg" alt="Headshot of a young woman (Willow) in a yellow raincoat">
                 </div>
 
             </div><!-- END of wrapper -->
@@ -82,7 +131,7 @@
                 <div class="blogPreview blogPreviewOne">
 
                     <div class="imgContainer imgContainerOne">
-                        <img src="./assets/home-image-2.jpg" alt="">
+                        <img src="./assets/home-image-2.jpg" alt="Suspension bridge suspended by a forest and a running waterfall">
                     </div>
 
                     <div class="textContainer textContainerOne">
@@ -102,7 +151,7 @@
                     </div>
 
                     <div class="imgContainer imgContainerTwo">
-                        <img src="./assets/home-image-3.jpg" alt="">
+                        <img src="./assets/home-image-3.jpg" alt="Close up of a white and yellow water lily pond">
                     </div>
 
                 </div>
@@ -115,7 +164,7 @@
             <div class="wrapper aboutTwoContainer">
 
                 <div class="imgContainer">
-                    <img src="./assets/home-image-4.jpg" alt="">
+                    <img src="./assets/home-image-4.jpg" alt="A young woman (Willow) wearing a yellow raincoat shot from behind in a greenhouse">
                 </div>
 
                 <div class="textContainer">
@@ -136,13 +185,13 @@
             <div class="wrapper galleryContainer">
                 <ul>
                     <li class="galleryImg">                    
-                        <img src="./assets/home-image-6.jpg" alt="">
+                        <img src="./assets/home-image-6.jpg" alt="Empty winding road with fog in the distance">
                     </li>
                     <li class="galleryImg">
-                        <img src="./assets/home-image-7.jpg" alt="">
+                        <img src="./assets/home-image-7.jpg" alt="Green bowl of lemons with a wooden plate of sliced lemons">
                     </li>
                     <li class="galleryImg">
-                        <img src="./assets/home-image-8.jpg" alt="">
+                        <img src="./assets/home-image-8.jpg" alt="Stone vintage staircase with wooden and black metal rail">
                     </li>
                 </ul>
             </div><!-- END of wrapper -->
