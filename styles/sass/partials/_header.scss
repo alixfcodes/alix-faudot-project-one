@@ -3,7 +3,6 @@
 .headerHome {
     background-color: $pine;
     height: 700px;
-    // max-height: 70vh;
     .headerContainer {
         height: 100%;
         display: flex;
@@ -51,7 +50,7 @@
     .headerContainer {
         position: relative;
         height: 100%;
-        h1 {
+        h2 {
             position: absolute;
             left: 0;
             bottom: -16px;

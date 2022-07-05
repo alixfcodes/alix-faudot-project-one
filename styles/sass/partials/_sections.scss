@@ -1,6 +1,6 @@
-// HOME SECTIONS
+// HOME PAGE SECTIONS
 
-// about1 section
+// about 1 section
 
 .aboutSection {
     background-color: $whiteShade;
@@ -102,7 +102,7 @@
     }
 }
 
-// banner image
+// banner image section
 
 .banner {
     height: 500px;
@@ -116,7 +116,7 @@
     }
 }
 
-// gallery
+// gallery section
 
 .galleryContainer {
     padding: 100px 0;
@@ -135,22 +135,22 @@
     }
 }
 
-// BLOG SECTIONS
+// BLOG/CONTACT PAGE SECTIONS
 
-.mainBlog {
+.mainBlog, .mainContact {
     background-color: $whiteShade;
     text-align: left;
     padding: 100px 0;
 }
 
-.blogMainPage {
+.blogMainPage, .contactMainPage {
     display: flex;
     justify-content: space-between;
     .leftColumn {
         display: flex;
         flex-direction: column;
         width: 30.5%;
-        .aboutArticle, .recentPosts {
+        .aboutArticle, .recentPosts, .contactSection {
             display: flex;
             flex-direction: column;
             background-color: white;
@@ -218,7 +218,7 @@
     }
 }
 
-// CONTACT PAGE
+// CONTACT PAGE SECTIONS
 
 .socialNav {
     display: flex;

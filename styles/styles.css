@@ -497,7 +497,7 @@ img {
   position: relative;
   height: 100%;
 }
-.header .headerContainer h1 {
+.header .headerContainer h2 {
   position: absolute;
   left: 0;
   bottom: -16px;
@@ -675,13 +675,13 @@ img {
   margin: 0 40px;
 }
 
-.mainBlog {
+.mainBlog, .mainContact {
   background-color: #f6f6f6;
   text-align: left;
   padding: 100px 0;
 }
 
-.blogMainPage {
+.blogMainPage, .contactMainPage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -689,7 +689,7 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.blogMainPage .leftColumn {
+.blogMainPage .leftColumn, .contactMainPage .leftColumn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,7 +699,7 @@ img {
           flex-direction: column;
   width: 30.5%;
 }
-.blogMainPage .leftColumn .aboutArticle, .blogMainPage .leftColumn .recentPosts {
+.blogMainPage .leftColumn .aboutArticle, .blogMainPage .leftColumn .recentPosts, .blogMainPage .leftColumn .contactSection, .contactMainPage .leftColumn .aboutArticle, .contactMainPage .leftColumn .recentPosts, .contactMainPage .leftColumn .contactSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -711,34 +711,34 @@ img {
   padding: 40px;
   margin-bottom: 20px;
 }
-.blogMainPage .leftColumn .aboutArticle .aboutImg, .blogMainPage .leftColumn .recentPosts .aboutImg {
+.blogMainPage .leftColumn .aboutArticle .aboutImg, .blogMainPage .leftColumn .recentPosts .aboutImg, .blogMainPage .leftColumn .contactSection .aboutImg, .contactMainPage .leftColumn .aboutArticle .aboutImg, .contactMainPage .leftColumn .recentPosts .aboutImg, .contactMainPage .leftColumn .contactSection .aboutImg {
   margin-bottom: 30px;
   width: 100%;
 }
-.blogMainPage .leftColumn .aboutArticle h4, .blogMainPage .leftColumn .recentPosts h4 {
+.blogMainPage .leftColumn .aboutArticle h4, .blogMainPage .leftColumn .recentPosts h4, .blogMainPage .leftColumn .contactSection h4, .contactMainPage .leftColumn .aboutArticle h4, .contactMainPage .leftColumn .recentPosts h4, .contactMainPage .leftColumn .contactSection h4 {
   padding-bottom: 20px;
 }
-.blogMainPage .leftColumn .aboutArticle p, .blogMainPage .leftColumn .recentPosts p {
+.blogMainPage .leftColumn .aboutArticle p, .blogMainPage .leftColumn .recentPosts p, .blogMainPage .leftColumn .contactSection p, .contactMainPage .leftColumn .aboutArticle p, .contactMainPage .leftColumn .recentPosts p, .contactMainPage .leftColumn .contactSection p {
   margin: 0;
   padding: 0;
 }
-.blogMainPage .leftColumn .aboutArticle .aboutLink, .blogMainPage .leftColumn .recentPosts .aboutLink {
+.blogMainPage .leftColumn .aboutArticle .aboutLink, .blogMainPage .leftColumn .recentPosts .aboutLink, .blogMainPage .leftColumn .contactSection .aboutLink, .contactMainPage .leftColumn .aboutArticle .aboutLink, .contactMainPage .leftColumn .recentPosts .aboutLink, .contactMainPage .leftColumn .contactSection .aboutLink {
   color: #709b6b;
   font-weight: bold;
 }
-.blogMainPage .leftColumn .aboutArticle .aboutLink:hover, .blogMainPage .leftColumn .aboutArticle .aboutLink:focus, .blogMainPage .leftColumn .recentPosts .aboutLink:hover, .blogMainPage .leftColumn .recentPosts .aboutLink:focus {
+.blogMainPage .leftColumn .aboutArticle .aboutLink:hover, .blogMainPage .leftColumn .aboutArticle .aboutLink:focus, .blogMainPage .leftColumn .recentPosts .aboutLink:hover, .blogMainPage .leftColumn .recentPosts .aboutLink:focus, .blogMainPage .leftColumn .contactSection .aboutLink:hover, .blogMainPage .leftColumn .contactSection .aboutLink:focus, .contactMainPage .leftColumn .aboutArticle .aboutLink:hover, .contactMainPage .leftColumn .aboutArticle .aboutLink:focus, .contactMainPage .leftColumn .recentPosts .aboutLink:hover, .contactMainPage .leftColumn .recentPosts .aboutLink:focus, .contactMainPage .leftColumn .contactSection .aboutLink:hover, .contactMainPage .leftColumn .contactSection .aboutLink:focus {
   color: #e4a436;
 }
-.blogMainPage .leftColumn .aboutArticle .postList, .blogMainPage .leftColumn .recentPosts .postList {
+.blogMainPage .leftColumn .aboutArticle .postList, .blogMainPage .leftColumn .recentPosts .postList, .blogMainPage .leftColumn .contactSection .postList, .contactMainPage .leftColumn .aboutArticle .postList, .contactMainPage .leftColumn .recentPosts .postList, .contactMainPage .leftColumn .contactSection .postList {
   list-style: none;
   padding-left: 10px;
 }
-.blogMainPage .leftColumn .aboutArticle .postList:before, .blogMainPage .leftColumn .recentPosts .postList:before {
+.blogMainPage .leftColumn .aboutArticle .postList:before, .blogMainPage .leftColumn .recentPosts .postList:before, .blogMainPage .leftColumn .contactSection .postList:before, .contactMainPage .leftColumn .aboutArticle .postList:before, .contactMainPage .leftColumn .recentPosts .postList:before, .contactMainPage .leftColumn .contactSection .postList:before {
   content: "•";
   font-size: 13pt;
   padding-right: 15px;
 }
-.blogMainPage .rightColumn {
+.blogMainPage .rightColumn, .contactMainPage .rightColumn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -748,16 +748,16 @@ img {
           flex-direction: column;
   width: 66%;
 }
-.blogMainPage .rightColumn .mostRecentPost, .blogMainPage .rightColumn .comments {
+.blogMainPage .rightColumn .mostRecentPost, .blogMainPage .rightColumn .comments, .contactMainPage .rightColumn .mostRecentPost, .contactMainPage .rightColumn .comments {
   background-color: white;
   padding: 40px;
   margin-bottom: 40px;
   border-bottom: 6px solid #709b6b;
 }
-.blogMainPage .rightColumn h3 {
+.blogMainPage .rightColumn h3, .contactMainPage .rightColumn h3 {
   padding: 10px 0;
 }
-.blogMainPage .rightColumn .commentOne {
+.blogMainPage .rightColumn .commentOne, .contactMainPage .rightColumn .commentOne {
   border-bottom: none;
   margin-bottom: 20px;
 }
@@ -1193,6 +1193,10 @@ form .contactInfo .formName, form .contactInfo .formEmail {
     top: 500px;
   }
 
+  .header {
+    height: 350px;
+  }
+
   .blogPreviewOne {
     position: relative;
     top: -40px;
@@ -1295,12 +1299,37 @@ form .contactInfo .formName, form .contactInfo .formEmail {
     font-size: 0.8rem;
   }
 
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
   .headerHome {
     height: 350px;
   }
   .headerHome .headerContainer .imgContainer {
     width: 85%;
     top: 350px;
+  }
+
+  .header {
+    height: 300px;
+  }
+
+  .headerContainer h1 {
+    left: 0;
+    bottom: -18px;
   }
 
   .banner {
