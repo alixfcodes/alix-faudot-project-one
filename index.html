@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-
     <!-- skip to main content link
     <a href="#mainContent" class="skip-link">Skip to main content.</a> -->
-
     <!-- site top nav -->
     <nav class="siteNav">
         <div class="wrapper">
@@ -47,18 +45,16 @@
                     </a>
                 </li>
             </ul>
-
             <!--  slide out hamburger menu -->
 			<input type="checkbox" id="hamburgerMenu">
 			<label for="hamburgerMenu" class="menuButton">
 				<i class="fa-solid fa-bars" alt="Menu button"></i>
 			</label>
-
             <!-- slide out nav content -->
 			<div class="slideOutNav">
 				<div class="buttonContainer">
-					<!-- <button class="menuClose">x</button> -->
-                    <!-- using label instead of button to allow for slide menu to close -->
+                    <!-- <button class="menuClose">x</button> -->
+                    <!-- using label instead of button to allow for slide menu to close with css only -->
 					<label for="hamburgerMenu" class="menuClose"><i class="fa-solid fa-xmark" alt="Close button"></i></label>
 				</div>
 				<nav>
@@ -95,86 +91,63 @@
     </nav>
     <!-- home header -->
     <header class="headerHome">
-
             <div class="wrapper headerContainer">
-
                 <div class="textContainer">
                     <!-- <div class="circleText"><img src="./assets/circle-text.png" alt="Daily musings of"></div> -->
                     <h1>Willow</h1>
                 </div>
-
                 <div class="imgContainer">
                     <img src="./assets/home-image-1.jpg" alt="Headshot of a young woman (Willow) in a yellow raincoat">
                 </div>
-
             </div><!-- END of wrapper -->
-
     </header>
     <!-- home main -->
     <main>
         <!-- about section -->
         <section class="aboutSection">
-
             <div class="wrapper aboutContainer">
-
                 <h2>Who's Willow?</h2>
                 <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Munc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor.</p>
                 <a href="#" class="button">Find out more</a>
-
             </div><!-- END of wrapper -->
-
         </section>
         <!-- blog section -->
         </section class="blogSection">
             <div class="wrapper blogContainer">
-
                 <div class="blogPreview blogPreviewOne">
-
                     <div class="imgContainer imgContainerOne">
                         <img src="./assets/home-image-2.jpg" alt="Suspension bridge suspended by a forest and a running waterfall">
                     </div>
-
                     <div class="textContainer textContainerOne">
                         <h3>Favourite things</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eret risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iacculis at.</p>
                         <a href="./blog.html" class="button">Read more</a>
                     </div>
-
                 </div>
-
                 <div class="blogPreview blogPreviewTwo">
-
                     <div class="textContainer textContainerTwo">
                         <h3>Bucket list</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In eret risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iacculis at.</p>
                         <a href="./blog.html" class="button">Read more</a>
                     </div>
-
                     <div class="imgContainer imgContainerTwo">
                         <img src="./assets/home-image-3.jpg" alt="Close up of a white and yellow water lily pond">
                     </div>
-
                 </div>
-
             </div><!-- END of wrapper -->
         </section>
         <!-- about 2 section -->
         <section class="aboutTwoSection">
-
             <div class="wrapper aboutTwoContainer">
-
                 <div class="imgContainer">
                     <img src="./assets/home-image-4.jpg" alt="A young woman (Willow) wearing a yellow raincoat shot from behind in a greenhouse">
                 </div>
-
                 <div class="textContainer">
                     <h2>Willow's journey</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felic pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felic pharetra luctus.</p>
                     <a href="#" class="button">Find out more</a>
                 </div>
-
             </div><!-- END of wrapper -->
-
         </section>
         <!--  gallery section -->
         <section class="gallery">
@@ -196,35 +169,38 @@
                 </ul>
             </div><!-- END of wrapper -->
         </section>
-        <!-- links container -->
-        <section class="linkSection">
-            <div class="wrapper linkContainer">
-                <!-- photos link-->
-                <a href="#" class="linkContent linkPhotos">
+    </main>
+    <!-- footer -->
+    <footer>
+        <!--  secondary nav -->
+        <section class="secondaryNav">
+            <div class="wrapper secondaryNavContainer">
+                <!-- photos secondary nav -->
+                <a href="#" class="secondaryNavContent linkPhotos">
                     <i class="fa-solid fa-image"></i>
                     <div class="linkText">
                         <h3>Photos</h3>
                         <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                     </div>
                 </a>
-                <!-- about link -->
-                <a href="#" class="linkContent linkAbout">
+                <!-- about secondary nav -->
+                <a href="#" class="secondaryNavContent linkAbout">
                     <i class="fa-solid fa-user"></i>
                     <div class="linkText">
-                            <h3>About</h3>
-                            <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                        <h3>About</h3>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                     </div>
                 </a>
-                <!--  blog link -->
-                <a href="./blog.html" class="linkContent linkBlog">
+                <!--  blog secondary nav -->
+                <a href="./blog.html" class="secondaryNavContent linkBlog">
                     <i class="fa-solid fa-display"></i>
                     <div class="linkText">
                         <h3>Blog</h3>
                         <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
                     </div>
                 </a>
-                <!-- contact link -->
-                <a href="./contact.html" class="linkContent linkContact">
+                <!-- contact secondary nav -->
+                <a href="./contact.html" class="secondaryNavContent linkContact">
                     <i class="fa-solid fa-phone-flip"></i>
                     <div class="linkText">
                         <h3>Contact me</h3>
@@ -233,13 +209,12 @@
                 </a>
             </div><!-- END of wrapper -->
         </section>
-    </main>
-    <!-- footer -->
-    <footer>
         <!-- site copyright -->
-        <div class="copyright">
-            <p>Copyright <span>&copy;</span> 2022 <a href="https://junocollege.com/" target="_blank">Juno College</a></p>
-        </div>
+        <section class="copyright">
+            <div class="wrapper">
+                <p>Copyright <span>&copy;</span> 2022 <a href="https://junocollege.com/" target="_blank">Juno College</a></p>
+            </div>
+        </section>
     </footer>
 </body>
 </html>

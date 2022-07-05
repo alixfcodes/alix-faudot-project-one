@@ -223,7 +223,7 @@ template {
 }
 
 /* site fonts */
-/* if we set our root element font-size to 125%, then 1 rem = 20px */
+/* root element font-size set to 125% => 1 rem = 20px */
 /* site colours */
 html {
   font-size: 125%;
@@ -382,10 +382,10 @@ img {
   border-right: 1px solid #e4a436;
   position: fixed;
   top: 0;
-  left: -400px;
+  left: -500px;
   height: 100vh;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   padding: 35px 50px;
   z-index: 20;
   -webkit-transition: 0.75s;
@@ -675,54 +675,6 @@ img {
   margin: 0 40px;
 }
 
-.linkSection {
-  background-color: #f6f6f6;
-}
-
-.linkContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 100px 0;
-}
-.linkContainer .linkContent {
-  width: 49%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: left;
-}
-.linkContainer .linkContent i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  background-color: #e4a436;
-  border-radius: 50%;
-  padding: 16px;
-}
-.linkContainer .linkContent .linkText {
-  padding-left: 20px;
-}
-.linkContainer .linkContent .linkText h3 {
-  padding-top: 12px;
-}
-.linkContainer .linkPhotos, .linkContainer .linkAbout {
-  margin-bottom: 40px;
-}
-
 .mainBlog {
   background-color: #f6f6f6;
   text-align: left;
@@ -913,10 +865,58 @@ form .contactInfo .formName, form .contactInfo .formEmail {
   width: 49%;
 }
 
+.secondaryNav {
+  background-color: #f6f6f6;
+}
+
+.secondaryNavContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 100px 0;
+}
+.secondaryNavContainer .secondaryNavContent {
+  width: 49%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+.secondaryNavContainer .secondaryNavContent i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: #e4a436;
+  border-radius: 50%;
+  padding: 16px;
+}
+.secondaryNavContainer .secondaryNavContent .linkText {
+  padding-left: 20px;
+}
+.secondaryNavContainer .secondaryNavContent .linkText h3 {
+  padding-top: 12px;
+}
+.secondaryNavContainer .linkPhotos, .secondaryNavContainer .linkAbout {
+  margin-bottom: 40px;
+}
+
 .copyright {
   background-color: #1f1818;
   padding: 6px 0;
-  color: white;
+  color: #FFF;
 }
 .copyright p {
   padding: 0;
@@ -930,6 +930,13 @@ form .contactInfo .formName, form .contactInfo .formEmail {
   color: #e4a436;
 }
 
+/** Media queries breakpoints
+    1460px
+    1024px
+    780px
+    640px
+    490px
+**/
 @media (max-width: 1460px) {
   .headerHome {
     height: 500px;
@@ -1118,7 +1125,7 @@ form .contactInfo .formName, form .contactInfo .formEmail {
     margin-bottom: 15px;
   }
 
-  .linkContainer {
+  .secondaryNavContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1128,10 +1135,10 @@ form .contactInfo .formName, form .contactInfo .formEmail {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .linkContainer .linkContent {
+  .secondaryNavContainer .secondaryNavContent {
     width: 100%;
   }
-  .linkContainer .linkPhotos, .linkContainer .linkAbout, .linkContainer .linkBlog {
+  .secondaryNavContainer .linkPhotos, .secondaryNavContainer .linkAbout, .secondaryNavContainer .linkBlog {
     margin-bottom: 20px;
   }
 
@@ -1213,10 +1220,6 @@ form .contactInfo .formName, form .contactInfo .formEmail {
   }
 }
 @media (max-width: 640px) {
-  body {
-    font-size: 0.9rem;
-  }
-
   .headerHome {
     height: 450px;
   }
@@ -1306,6 +1309,6 @@ form .contactInfo .formName, form .contactInfo .formEmail {
 
   button, .button {
     padding: 8px 18px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 }

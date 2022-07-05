@@ -135,42 +135,6 @@
     }
 }
 
-// link section
-
-.linkSection {
-    background-color: $whiteShade;
-}
-
-.linkContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 100px 0;
-    .linkContent {
-        width: 49%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-align: left;
-        i {
-            display: flex;
-            align-self: flex-start;
-            background-color: $accent;
-            border-radius: 50%;
-            padding: 16px;
-        }
-        .linkText {
-            padding-left: 20px;
-            h3 { 
-                padding-top: 12px;
-            }
-        }
-    }
-    .linkPhotos, .linkAbout {
-        margin-bottom: 40px;
-    }
-}
-
 // BLOG SECTIONS
 
 .mainBlog {

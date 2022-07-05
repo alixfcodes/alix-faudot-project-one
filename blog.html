@@ -17,7 +17,7 @@
         <div class="wrapper">
             <!--  top menu nav -->
             <ul class="topNav">
-                <li class="currentPage">
+                <li>
                     <a href="./index.html">
                         <h5>Home</h5>
                     </a>
@@ -32,7 +32,7 @@
                         <h2>Willow</h2>
                     </a>
                 </li>
-                <li>
+                <li class="currentPage">
                     <a href="./blog.html">
                         <h5>Blog</h5>
                     </a>
@@ -43,19 +43,17 @@
                     </a>
                 </li>
             </ul>
-
             <!--  slide out hamburger menu -->
 			<input type="checkbox" id="hamburgerMenu">
 			<label for="hamburgerMenu" class="menuButton">
 				<i class="fa-solid fa-bars" alt="Menu button"></i>
 			</label>
-
             <!-- slide out nav content -->
 			<div class="slideOutNav">
 				<div class="buttonContainer">
-					<!-- <button class="menuClose">x</button> -->
-                    <!-- using label instead of button to allow for slide menu to close -->
-					<label for="hamburgerMenu" class="menuClose"><i class="fa-solid fa-xmark" alt="Close button"></i></label>
+					<label for="hamburgerMenu" class="menuClose">
+                        <i class="fa-solid fa-xmark" alt="Close button"></i>
+                    </label>
 				</div>
 				<nav>
 					<ul class="sideNav">
@@ -177,8 +175,8 @@
         </div><!-- END of wrapper -->
     </main>
     <!-- site footer -->
-    <footer>
-        <div class="copyright">
+    <footer class="copyright">
+        <div class="wrapper">
             <p>Copyright © 2022 <a href="https://junocollege.com/" target="_blank">Juno College</a></p>
         </div>
     </footer>
