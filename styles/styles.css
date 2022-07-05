@@ -497,7 +497,7 @@ img {
   position: relative;
   height: 100%;
 }
-.header .headerContainer h2 {
+.header .headerContainer h1 {
   position: absolute;
   left: 0;
   bottom: -16px;
@@ -1035,16 +1035,16 @@ form .contactInfo .formName, form .contactInfo .formEmail {
             box-shadow: 18px 18px #345231, 120px 18px #345231;
   }
 
-  .blogMainPage {
+  .blogMainPage, .contactMainPage {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .blogMainPage .leftColumn, .blogMainPage .rightColumn {
+  .blogMainPage .leftColumn, .blogMainPage .rightColumn, .contactMainPage .leftColumn, .contactMainPage .rightColumn {
     width: 100%;
   }
-  .blogMainPage .leftColumn .aboutArticle {
+  .blogMainPage .leftColumn .aboutArticle, .contactMainPage .leftColumn .aboutArticle {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1059,15 +1059,15 @@ form .contactInfo .formName, form .contactInfo .formEmail {
         -ms-flex-align: center;
             align-items: center;
   }
-  .blogMainPage .leftColumn .aboutArticle .aboutImg {
+  .blogMainPage .leftColumn .aboutArticle .aboutImg, .contactMainPage .leftColumn .aboutArticle .aboutImg {
     width: 35%;
     margin-bottom: 0;
   }
-  .blogMainPage .leftColumn .aboutArticle .aboutImg img {
+  .blogMainPage .leftColumn .aboutArticle .aboutImg img, .contactMainPage .leftColumn .aboutArticle .aboutImg img {
     width: 100%;
     height: auto;
   }
-  .blogMainPage .leftColumn .aboutArticle .aboutText {
+  .blogMainPage .leftColumn .aboutArticle .aboutText, .contactMainPage .leftColumn .aboutArticle .aboutText {
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
   }
@@ -1266,7 +1266,7 @@ form .contactInfo .formName, form .contactInfo .formEmail {
     margin: 20px 0;
   }
 
-  .blogMainPage .leftColumn .aboutArticle {
+  .blogMainPage .leftColumn .aboutArticle, .blogMainPage .leftColumn .contactSection, .contactMainPage .leftColumn .aboutArticle, .contactMainPage .leftColumn .contactSection {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1281,15 +1281,15 @@ form .contactInfo .formName, form .contactInfo .formEmail {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .blogMainPage .leftColumn .aboutArticle .aboutImg {
+  .blogMainPage .leftColumn .aboutArticle .aboutImg, .blogMainPage .leftColumn .contactSection .aboutImg, .contactMainPage .leftColumn .aboutArticle .aboutImg, .contactMainPage .leftColumn .contactSection .aboutImg {
     width: 100%;
     margin-bottom: 20px;
   }
-  .blogMainPage .leftColumn .aboutArticle .aboutImg img {
+  .blogMainPage .leftColumn .aboutArticle .aboutImg img, .blogMainPage .leftColumn .contactSection .aboutImg img, .contactMainPage .leftColumn .aboutArticle .aboutImg img, .contactMainPage .leftColumn .contactSection .aboutImg img {
     width: 100%;
     height: auto;
   }
-  .blogMainPage .leftColumn .aboutArticle .aboutText {
+  .blogMainPage .leftColumn .aboutArticle .aboutText, .blogMainPage .leftColumn .contactSection .aboutText, .contactMainPage .leftColumn .aboutArticle .aboutText, .contactMainPage .leftColumn .contactSection .aboutText {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1329,7 +1329,7 @@ form .contactInfo .formName, form .contactInfo .formEmail {
 
   .headerContainer h1 {
     left: 0;
-    bottom: -18px;
+    bottom: -14px;
   }
 
   .banner {

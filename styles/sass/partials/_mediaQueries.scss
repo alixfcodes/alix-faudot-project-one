@@ -84,7 +84,7 @@
 
     // Blog page
 
-    .blogMainPage {
+    .blogMainPage, .contactMainPage {
         flex-direction: column;
         .leftColumn, .rightColumn {
             width: 100%;
@@ -313,9 +313,9 @@
     }
 
     // blog page
-    .blogMainPage {
+    .blogMainPage, .contactMainPage {
         .leftColumn {
-            .aboutArticle {
+            .aboutArticle, .contactSection {
             display: flex;
             flex-direction: column;
             align-items: space-between;
@@ -379,7 +379,7 @@
     .headerContainer {
         h1 {
             left: 0;
-            bottom: -18px;
+            bottom: -14px;
         }
     }
 
